@@ -1,0 +1,51 @@
+Firma ad	sokak	il/ilçe	mahalle
+aliquam	46-59 Sokak	Bingöl	Şuayipli Köyü
+ut	455.sokak	Bilecik	İncirköy
+est	2106/12 Sokak	Muş	Mazıköy
+Nulla	Sepetçi Sokak	Kütahya	Kurtköyü Mah.
+ac	Sütçü İmam Caddesi	Tokat	Çamlıça Mah.
+libero	19-11. Sokak	Van	Bahçelievler Mah.
+purus	Su Ocak Sokak	Sinop	Yolüstü
+scelerisque	Reyhanlı Caddesi	Niğde	Yılanlı Köyü
+adipiscing	Deper Köyü Küme Evleri	Osmaniye	Göğebakan Köyü
+Integer	2912. Sokak	Trabzon	Hoşça
+metus	Yanya Küme Evleri	Kayseri	Düzceli Köyü
+pulvinar	Osmanlı 2 Sokak	Eskişehir	Aksoy Köyü
+placerat	12/5 Sokak	Artvin	Erikli Köyü
+bibendum	Ustalar Mezrası	Şanlıurfa	Künceğiz Köyü
+ut	247. Caddesi	Aydın	Yeşilova Köyü
+tellus	Yüncü Sokak	Sinop	Aktaş Köyü
+purus	Çehre Sokak	Elazığ	Kırdamı Köyü
+Ut	Baksan 64.blok Küme Evleri	Rize	Çaylı Mah
+nec	3092. Sokak	Şanlıurfa	Armutlu Köyü
+eget	5513.. Sokak	Karabük	Dinek Köyü
+Suspendisse	İbrahim İşsevenler Caddesi	Muğla	Yukarıveysi Köyü
+sem	Seyran(yörükali) Sokak	Van	Iğdır Köyü
+lectus	Kerim Paşa Çıkmazı Sokak	Bartın	Çataklı Köyü
+venenatis	Mustafa Karakuş Meydanı	Muş	Kayahisar Köyü
+facilisis	Tayyar Sokak	Hatay	Koçyayla Köyü
+dui	Terzi Ahmet Caddesi	Giresun	Altıkapı Köyü
+mi	Çinioğlu Sokak	Giresun	Meydanlı Köyü
+nisi	Basın Yayın Zeytin Sokak	Düzce	Hacımahmut Köyü
+eleifend	6814/2 Sokak	Sivas	Hisarlık Köyü
+amet	Karalar Yolu Küme Evleri	Kırklareli	Salihköy Köyü
+ac	Bahçe Kültürleri Küme Evleri	Bursa	Akçakamış
+semper	Daban Mezrası	Denizli	Akkum Köyü
+posuere	2245 Gazi Osman 15 Sokak	Hatay	Kurugöl
+nunc	Korkmazer Sokak	Gaziantep	Holla Hüseyin Köyü
+adipiscing	Ilıca Cad. Caddesi	Adıyaman	Evcili Köyü
+a	Zamoğlu Sokak	Yozgat	Belkıs
+amet	Çerkezler Mevki	Samsun	Güvenli Köyü
+ut	Pireli/aşakbel Mevki	Nevşehir	Küçükkaymaz Köyü
+erat	659.. Sokak	Edirne	Erginköy Köyü
+luctus	Şehit Mustafa Uğur Caddesi	Tekirdağ	Camikebir Mah.
+pellentesque	1476. Küme Evleri	Mardin	Kemalpaşa Mahallesi
+nulla	Dokuzçeltik Küme Evleri	Yozgat	Ilıkkaynak Köyü
+sed	Mehmetçik Bulvarı	Balıkesir	Başpınar Köyü
+eros	36.(kumsaz) Sokak	Kahramanmaraş	Tipideresi Köyü
+at	Baraj 3 Caddesi	Mersin	Göllühöyük Köyü
+commodo	71046. Sokak	Tekirdağ	Kındıra Köyü
+aliquet	Esendere-güven-yeşilova Mevki	Kocaeli	Yukarızaferiye Mah.
+quis	5250.. Sokak	Batman	Karadiğin Köyü
+vulputate	Örsler Sokak	Tekirdağ	Yukarı Çakmak Köyü
+id	4360v Sokak	Kırıkkale	Yavca Köyügit 
