@@ -1,0 +1,150 @@
+CITY	DISTRICT
+Bartın	Kurucaşile
+Rize	Pazar / Rize
+Erzincan	Çayırlı
+Isparta	Gelendost
+Giresun	Çanakçı
+Bitlis	Mutki
+Ordu	Çatalpınar
+Artvin	Artvin Merkez
+Aydın	Germencik
+Şanlıurfa	Viranşehir
+Samsun	Terme
+Kütahya	Emet
+Samsun	Ladik
+Elazığ	Alacakaya
+Eskişehir	Çifteler
+Çanakkale	Gökçeada
+Tunceli	Tunceli Merkez
+Rize	Rize Merkez
+Kırıkkale	Balışeyh
+Burdur	Burdur Merkez
+Sivas	Akıncılar
+Antalya	Gündoğmuş
+Çorum	Oğuzlar
+Diyarbakır	Bismil
+Adana	Feke
+Isparta	Gelendost
+Kars	Susuz
+Muğla	Bodrum
+Mardin	Mardin Merkez
+Ankara	Etimesgut
+Hatay	Payas
+Bartın	Bartın Merkez
+İstanbul	Ümraniye
+Nevşehir	Avanos
+Sakarya	Taraklı
+Karaman	Ayrancı
+Isparta	Gelendost
+Kırıkkale	Çelebi
+Nevşehir	Derinkuyu
+Sivas	Yıldızeli
+Manisa	Saruhanlı
+Rize	Derepazarı
+Erzurum	Şenkaya
+Samsun	Atakum
+Trabzon	Tonya
+Kahramanmaraş	Türkoğlu
+İzmir	Kiraz
+Kütahya	Gediz
+İstanbul	Esenler
+Van	Gevaş
+Bilecik	Osmaneli
+Malatya	Malatya Merkez
+Şırnak	Beytüşşebap
+Zonguldak	Çaycuma
+Adana	Seyhan
+Osmaniye	Kadirli
+Rize	Fındıklı
+Sakarya	Geyve
+Muş	Hasköy
+Balıkesir	Manyas
+Ardahan	Damal
+Isparta	Şarkikaraağaç
+Bayburt	Bayburt Merkez
+Muğla	Fethiye
+Kütahya	Hisarcık
+Hatay	Hatay Merkez
+Ordu	Çaybaşı
+Çankırı	Kurşunlu
+Sakarya	Sapanca
+Muğla	Dalaman
+Hatay	Hassa
+Ardahan	Posof
+Sivas	Altınyayla / Sivas
+Balıkesir	Bigadiç
+Manisa	Saruhanlı
+Malatya	Malatya Merkez
+Amasya	Amasya Merkez
+Aksaray	Ağaçören
+Siirt	Tillo
+İzmir	Ödemiş
+Şanlıurfa	Siverek
+Burdur	Yeşilova
+Erzincan	Refahiye
+İzmir	Torbalı
+İstanbul	Kağıthane
+Sivas	İmranlı
+Kars	Kağızman
+Samsun	Terme
+Siirt	Siirt Merkez
+Kahramanmaraş	Dulkadiroğlu
+Manisa	Turgutlu
+Rize	Fındıklı
+Balıkesir	Susurluk
+Nevşehir	Kozaklı
+Konya	Karapınar
+Kırıkkale	Kırıkkale Merkez
+Kütahya	Pazarlar
+Adana	Karataş
+Van	İpekyolu
+Kütahya	Altıntaş
+Aksaray	Ağaçören
+Yozgat	Sorgun
+İzmir	Bayraklı
+İzmir	Foça
+Hatay	Hassa
+Antalya	Manavgat
+Denizli	Pamukkale
+Kars	Susuz
+Erzurum	Palandöken
+Ordu	Perşembe
+Rize	Derepazarı
+Siirt	Kurtalan
+Malatya	Yazıhan
+Gaziantep	Karkamış
+Çanakkale	Çan
+Rize	Hemşin
+Konya	Hadim
+Düzce	Gölyaka
+Muş	Hasköy
+Aksaray	Eskil
+Antalya	Gazipaşa
+Tokat	Başçiftlik
+Eskişehir	Han
+Hatay	Antakya
+Zonguldak	Zonguldak Merkez
+İstanbul	Avcılar
+Bursa	Gemlik
+Trabzon	Sürmene
+Bayburt	Demirözü
+Malatya	Hekimhan
+Aydın	Germencik
+Rize	Rize Merkez
+Gaziantep	Nizip
+İstanbul	Beylikdüzü
+Tunceli	Ovacık / Tunceli
+Uşak	Sivaslı
+Uşak	Sivaslı
+Batman	Sason
+Samsun	Ladik
+Sakarya	Sapanca
+Yalova	Termal
+Kahramanmaraş	Onikişubat
+Diyarbakır	Çınar
+Uşak	Uşak Merkez
+Aksaray	Ortaköy / Aksaray
+Ordu	Akkuş
+Ardahan	Ardahan Merkez
+Kırklareli	Demirköy
+Yozgat	Sarıkaya
