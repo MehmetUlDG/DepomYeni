@@ -1,0 +1,19 @@
+    //Action kullanarak ekrana “Veri Kaydedildi” mesajını yazdır.
+            Action mesaj = () => Console.WriteLine("Veri Kaydedildi");
+            mesaj();
+            //Predicate kullanarak bir kelimenin 5 harften uzun olup olmadığını kontrol eden bir metot yaz.
+            Predicate<string> uzunluk = x => x.Length > 5;
+            Console.WriteLine(uzunluk("Merhaba"));
+            //Gerçek dünya örneği: Bir öğrenci listesi oluştur ve 18 yaşından büyük olanları filtrele.
+            List<ogrenci> ogrenciler = new List<ogrenci>();
+            ogrenciler.Add(new ogrenci { ad = "Ali", yas = 17 });   
+            ogrenciler.Add(new ogrenci { ad = "Veli", yas = 18 });
+            ogrenciler.Add(new ogrenci { ad = "Ahmet", yas = 19 });
+            IEnumerable<ogrenci> yetiskinler = ogrenciler.Where(x => x.yas > 18);
+            foreach (ogrenci ogrenci in yetiskinler) Console.WriteLine(ogrenci.ad);
+            //Bir metot oluştur ve ref ile bir değişkenin değerini 2 katına çıkar.
+               int sayi = 5;
+             arttir(ref sayi);
+
+
+            Console.WriteLine(sayi);
