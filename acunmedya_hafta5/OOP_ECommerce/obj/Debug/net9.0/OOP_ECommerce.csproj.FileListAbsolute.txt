@@ -1,0 +1,14 @@
+C:\Users\mehme\source\repos\OOP_ECommerce\bin\Debug\net9.0\OOP_ECommerce.exe
+C:\Users\mehme\source\repos\OOP_ECommerce\bin\Debug\net9.0\OOP_ECommerce.deps.json
+C:\Users\mehme\source\repos\OOP_ECommerce\bin\Debug\net9.0\OOP_ECommerce.runtimeconfig.json
+C:\Users\mehme\source\repos\OOP_ECommerce\bin\Debug\net9.0\OOP_ECommerce.dll
+C:\Users\mehme\source\repos\OOP_ECommerce\bin\Debug\net9.0\OOP_ECommerce.pdb
+C:\Users\mehme\source\repos\OOP_ECommerce\obj\Debug\net9.0\OOP_ECommerce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mehme\source\repos\OOP_ECommerce\obj\Debug\net9.0\OOP_ECommerce.AssemblyInfoInputs.cache
+C:\Users\mehme\source\repos\OOP_ECommerce\obj\Debug\net9.0\OOP_ECommerce.AssemblyInfo.cs
+C:\Users\mehme\source\repos\OOP_ECommerce\obj\Debug\net9.0\OOP_ECommerce.csproj.CoreCompileInputs.cache
+C:\Users\mehme\source\repos\OOP_ECommerce\obj\Debug\net9.0\OOP_ECommerce.dll
+C:\Users\mehme\source\repos\OOP_ECommerce\obj\Debug\net9.0\refint\OOP_ECommerce.dll
+C:\Users\mehme\source\repos\OOP_ECommerce\obj\Debug\net9.0\OOP_ECommerce.pdb
+C:\Users\mehme\source\repos\OOP_ECommerce\obj\Debug\net9.0\OOP_ECommerce.genruntimeconfig.cache
+C:\Users\mehme\source\repos\OOP_ECommerce\obj\Debug\net9.0\ref\OOP_ECommerce.dll
