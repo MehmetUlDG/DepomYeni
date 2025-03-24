@@ -1,24 +1,84 @@
-@model MyCvModel
+@model MyCvWebSite.Models.Bilgiler
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My CV</title>
-       
-    </head>
-    <body>
-        <title>İletişim Bilgilerim</title><br/>
-        <h1>İletişim Bilgilerim</h1><br/>
-        <p1>@Model.Email</p1><br/>
-        <p2>@Model.github</p2><br/>
-        <p3>@Model.linkedin</p3><br/>
-        <title>Eğitim ve Tecrübelerim</title><br/>
-        <h2>Eğitim ve Tecrübelerim</h2><br/>
-        <p5>@Model.Education</p5><br/>
-        <p6>@Model.Experience</p6><br/>
-        <p7>@Model.Skills</p7><br/>
-        <p8>@Model.Languages</p8><br/>  
+    
+@await Html.PartialAsync("_Navbar")
+@await Html.PartialAsync("_Header")
 
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+
+    <title>My CV</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-header {
+            background-color: #343a40;
+            color: white;
+            padding: 60px 0;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .custom-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .custom-card-header {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .custom-card-body {
+            padding: 20px;
+        }
+
+        .custom-card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .custom-card-text span {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+
+    
+                <div class="card custom-card">
+                    <div class="card-header custom-card-header">
+                        CV Detaylarım
+                    </div>
+                    <div class="card-body custom-card-body">
+                        <h5 class="card-title custom-card-title">İletişim & Yetenek Bilgilerim</h5>
+                        <p class="card-text custom-card-text">
+                            <span><strong>E-posta:</strong> @Model.Email</span>
+                            <span><strong>GitHub:</strong> <a href="@Model.github"
+                                    target="_blank">@Model.github</a></span>
+                            <span><strong>LinkedIn:</strong> <a href="@Model.linkedin"
+                                    target="_blank">@Model.linkedin</a></span>
+                            <span><strong>Eğitim:</strong> @Model.Education</span>
+                            <span><strong>Deneyim:</strong> @Model.Experience</span>
+                            <span><strong>Yetenekler:</strong> @Model.Skills</span>
+                            <span><strong>Diller:</strong> @Model.Languages</span>
+                        </p>
+                    </div>
+                </div>
+           
+   
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </html>

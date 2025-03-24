@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MyCvWebSite.Models
 {
-    public class MyCvModel
+       public class MyCvModel
     {
         public int Id { get; set; }
          public string? Name { get; set; }
@@ -24,5 +24,7 @@ namespace MyCvWebSite.Models
         public string? Languages { get; set; }
         public string? Description { get; set; }
     
-
-    }}
+        public string? Image { get; set; }
+    }  
+      
+    }

@@ -13,6 +13,34 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (1).jpg",
+      "PackagePath": "staticwebassets\\images\\indir (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (2).jpg",
+      "PackagePath": "staticwebassets\\images\\indir (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (3).jpg",
+      "PackagePath": "staticwebassets\\images\\indir (3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (4).jpg",
+      "PackagePath": "staticwebassets\\images\\indir (4).jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir.jpg",
+      "PackagePath": "staticwebassets\\images\\indir.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir1.png",
+      "PackagePath": "staticwebassets\\images\\indir1.png"
+    },
+    {
       "Id": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

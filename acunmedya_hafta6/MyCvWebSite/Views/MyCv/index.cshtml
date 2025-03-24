@@ -1,18 +1,76 @@
-@model MyCvModel
+
+@model MyCvWebSite.Models.Bilgiler
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My CV</title>
-       
-    </head>
-    <body>
-        <title>CV Bilgilerim</title>
-        <h1>CV Bilgilerim</h1><br/>
-       <p1>@Model.Name</p1>
-         <p2>@Model.Surname</p2><br/>
-         <p3>@Model.Email</p3><br/>
-         <p4>@Model.Description</p4><br/>
-    </body>
+    
+@await Html.PartialAsync("_Navbar")
+@await Html.PartialAsync("_Header")
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+
+    <title>My CV</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-header {
+            background-color: #343a40;
+            color: white;
+            padding: 60px 0;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .custom-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .custom-card-header {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .custom-card-body {
+            padding: 20px;
+        }
+
+        .custom-card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .custom-card-text span {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<div class="cv-details">
+    <h2 class="mb-4">Kartvizitim</h2>
+    <table>
+        <tr>
+            <th>Giriş</th>
+            <td><a href="@Model.github" target="_blank">GitHub Profilim</a></td>
+        </tr>
+        <tr>
+            <th>İsim/Soyisim</th>
+            <td>
+                <p><strong>Ad :</strong>@Model.Name</p>
+                <p><strong>Soyad:</strong> @Model.Surname</p>
+            </td>
+        </tr>
+        <tr>
+            <th>İletişim</th>
+            <td>
+                <p><strong>Email :</strong> @Model.Email</p>
+            </td>
+    </table>
+</div>
 </html>
