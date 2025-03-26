@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7t2TFfjt7Z/g7UI9mXiIU6gN/8cjSv5o4ebgRVzfFCc=",
+  "Hash": "D4YbJLFf5mORt+cLszj0VXskOIvMxBtxfuYsI0z6TNU=",
   "Source": "MyCvWebSite",
   "BasePath": "_content/MyCvWebSite",
   "Mode": "Default",
@@ -1445,12 +1445,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\images.jpg",
+      "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\Anaresim.jpg",
       "SourceId": "MyCvWebSite",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\",
       "BasePath": "_content/MyCvWebSite",
-      "RelativePath": "images/images#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/Anaresim#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1463,15 +1463,15 @@
       "Integrity": "oooBaqHVmj8DqMWz81VdfpgcQd5T4T/9qgvb5WZf0/k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\images.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\Anaresim.jpg"
     },
     {
-      "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (1).jpg",
+      "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\sertifika.png",
       "SourceId": "MyCvWebSite",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\",
       "BasePath": "_content/MyCvWebSite",
-      "RelativePath": "images/indir (1)#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/sertifika#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1480,116 +1480,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "eb697hcrng",
-      "Integrity": "xqzUtpknnQflL/rMyli/o1yhoMZj0Ss7uxulr6PVOH8=",
+      "Fingerprint": "wh8p5pafk7",
+      "Integrity": "RIBYkcnXO1ZHy5X7Mxw4FIyh73hfq9/xgMhtEzNBkss=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\indir (1).jpg"
-    },
-    {
-      "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (2).jpg",
-      "SourceId": "MyCvWebSite",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\",
-      "BasePath": "_content/MyCvWebSite",
-      "RelativePath": "images/indir (2)#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "7hklrao7rp",
-      "Integrity": "FQIGX8s72jCYQmx7y0kH1kJjTYUWSgffddUpfQwyaKs=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\indir (2).jpg"
-    },
-    {
-      "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (3).jpg",
-      "SourceId": "MyCvWebSite",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\",
-      "BasePath": "_content/MyCvWebSite",
-      "RelativePath": "images/indir (3)#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "9mc7p7xomw",
-      "Integrity": "oYCtKmZQnOkC6cDrgpfFXcNlTkEFGVcIRMIrPy8VKXc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\indir (3).jpg"
-    },
-    {
-      "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (4).jpg",
-      "SourceId": "MyCvWebSite",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\",
-      "BasePath": "_content/MyCvWebSite",
-      "RelativePath": "images/indir (4)#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "e1okczf93x",
-      "Integrity": "st4fdNnWwPtLQVREe1gx+8FxccXVrwRJ8Pa04U9RWxo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\indir (4).jpg"
-    },
-    {
-      "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir.jpg",
-      "SourceId": "MyCvWebSite",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\",
-      "BasePath": "_content/MyCvWebSite",
-      "RelativePath": "images/indir#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "1qs61qsshs",
-      "Integrity": "6d/YGs67lp9ogLJY/BnqsT9Bc3PegS7W9vvo+rLx2pc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\indir.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir1.png",
-      "SourceId": "MyCvWebSite",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\",
-      "BasePath": "_content/MyCvWebSite",
-      "RelativePath": "images/indir1#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "w6x8rtpy45",
-      "Integrity": "+Abcj5vnqVG0g5FGdAzfltL2IE2dWeStDOr4rV2V/3c=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\indir1.png"
+      "OriginalItemSpec": "wwwroot\\images\\sertifika.png"
     },
     {
       "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\js\\site.js",
@@ -3471,8 +3366,8 @@
       ]
     },
     {
-      "Route": "images/images.edkij4pl7q.jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\images.jpg",
+      "Route": "images/Anaresim.edkij4pl7q.jpg",
+      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\Anaresim.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3507,7 +3402,7 @@
         },
         {
           "Name": "label",
-          "Value": "images/images.jpg"
+          "Value": "images/Anaresim.jpg"
         },
         {
           "Name": "integrity",
@@ -3516,8 +3411,8 @@
       ]
     },
     {
-      "Route": "images/images.jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\images.jpg",
+      "Route": "images/Anaresim.jpg",
+      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\Anaresim.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3553,8 +3448,8 @@
       ]
     },
     {
-      "Route": "images/indir (1).eb697hcrng.jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (1).jpg",
+      "Route": "images/sertifika.png",
+      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\sertifika.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3563,417 +3458,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6731"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xqzUtpknnQflL/rMyli/o1yhoMZj0Ss7uxulr6PVOH8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:33:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "eb697hcrng"
-        },
-        {
-          "Name": "label",
-          "Value": "images/indir (1).jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xqzUtpknnQflL/rMyli/o1yhoMZj0Ss7uxulr6PVOH8="
-        }
-      ]
-    },
-    {
-      "Route": "images/indir (1).jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (1).jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6731"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xqzUtpknnQflL/rMyli/o1yhoMZj0Ss7uxulr6PVOH8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:33:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xqzUtpknnQflL/rMyli/o1yhoMZj0Ss7uxulr6PVOH8="
-        }
-      ]
-    },
-    {
-      "Route": "images/indir (2).7hklrao7rp.jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (2).jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7546"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FQIGX8s72jCYQmx7y0kH1kJjTYUWSgffddUpfQwyaKs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:34:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7hklrao7rp"
-        },
-        {
-          "Name": "label",
-          "Value": "images/indir (2).jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-FQIGX8s72jCYQmx7y0kH1kJjTYUWSgffddUpfQwyaKs="
-        }
-      ]
-    },
-    {
-      "Route": "images/indir (2).jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (2).jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7546"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FQIGX8s72jCYQmx7y0kH1kJjTYUWSgffddUpfQwyaKs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:34:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-FQIGX8s72jCYQmx7y0kH1kJjTYUWSgffddUpfQwyaKs="
-        }
-      ]
-    },
-    {
-      "Route": "images/indir (3).9mc7p7xomw.jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (3).jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5899"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"oYCtKmZQnOkC6cDrgpfFXcNlTkEFGVcIRMIrPy8VKXc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:35:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9mc7p7xomw"
-        },
-        {
-          "Name": "label",
-          "Value": "images/indir (3).jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-oYCtKmZQnOkC6cDrgpfFXcNlTkEFGVcIRMIrPy8VKXc="
-        }
-      ]
-    },
-    {
-      "Route": "images/indir (3).jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (3).jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5899"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"oYCtKmZQnOkC6cDrgpfFXcNlTkEFGVcIRMIrPy8VKXc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:35:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-oYCtKmZQnOkC6cDrgpfFXcNlTkEFGVcIRMIrPy8VKXc="
-        }
-      ]
-    },
-    {
-      "Route": "images/indir (4).e1okczf93x.jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (4).jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13432"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"st4fdNnWwPtLQVREe1gx+8FxccXVrwRJ8Pa04U9RWxo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:35:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e1okczf93x"
-        },
-        {
-          "Name": "label",
-          "Value": "images/indir (4).jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-st4fdNnWwPtLQVREe1gx+8FxccXVrwRJ8Pa04U9RWxo="
-        }
-      ]
-    },
-    {
-      "Route": "images/indir (4).jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir (4).jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13432"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"st4fdNnWwPtLQVREe1gx+8FxccXVrwRJ8Pa04U9RWxo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:35:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-st4fdNnWwPtLQVREe1gx+8FxccXVrwRJ8Pa04U9RWxo="
-        }
-      ]
-    },
-    {
-      "Route": "images/indir.1qs61qsshs.jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11750"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6d/YGs67lp9ogLJY/BnqsT9Bc3PegS7W9vvo+rLx2pc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:31:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1qs61qsshs"
-        },
-        {
-          "Name": "label",
-          "Value": "images/indir.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6d/YGs67lp9ogLJY/BnqsT9Bc3PegS7W9vvo+rLx2pc="
-        }
-      ]
-    },
-    {
-      "Route": "images/indir.jpg",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11750"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6d/YGs67lp9ogLJY/BnqsT9Bc3PegS7W9vvo+rLx2pc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:31:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6d/YGs67lp9ogLJY/BnqsT9Bc3PegS7W9vvo+rLx2pc="
-        }
-      ]
-    },
-    {
-      "Route": "images/indir1.png",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir1.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1555"
+          "Value": "427635"
         },
         {
           "Name": "Content-Type",
@@ -3981,11 +3466,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+Abcj5vnqVG0g5FGdAzfltL2IE2dWeStDOr4rV2V/3c=\""
+          "Value": "\"RIBYkcnXO1ZHy5X7Mxw4FIyh73hfq9/xgMhtEzNBkss=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:33:32 GMT"
+          "Value": "Wed, 26 Mar 2025 11:05:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3995,13 +3480,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+Abcj5vnqVG0g5FGdAzfltL2IE2dWeStDOr4rV2V/3c="
+          "Value": "sha256-RIBYkcnXO1ZHy5X7Mxw4FIyh73hfq9/xgMhtEzNBkss="
         }
       ]
     },
     {
-      "Route": "images/indir1.w6x8rtpy45.png",
-      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\indir1.png",
+      "Route": "images/sertifika.wh8p5pafk7.png",
+      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta6\\MyCvWebSite\\wwwroot\\images\\sertifika.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4010,7 +3495,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1555"
+          "Value": "427635"
         },
         {
           "Name": "Content-Type",
@@ -4018,11 +3503,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+Abcj5vnqVG0g5FGdAzfltL2IE2dWeStDOr4rV2V/3c=\""
+          "Value": "\"RIBYkcnXO1ZHy5X7Mxw4FIyh73hfq9/xgMhtEzNBkss=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 11:33:32 GMT"
+          "Value": "Wed, 26 Mar 2025 11:05:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4032,15 +3517,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "w6x8rtpy45"
+          "Value": "wh8p5pafk7"
         },
         {
           "Name": "label",
-          "Value": "images/indir1.png"
+          "Value": "images/sertifika.png"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+Abcj5vnqVG0g5FGdAzfltL2IE2dWeStDOr4rV2V/3c="
+          "Value": "sha256-RIBYkcnXO1ZHy5X7Mxw4FIyh73hfq9/xgMhtEzNBkss="
         }
       ]
     },

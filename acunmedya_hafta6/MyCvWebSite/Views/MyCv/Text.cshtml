@@ -1,0 +1,77 @@
+@model MyCvWebSite.Models.Bilgiler
+<!DOCTYPE html>
+<html lang="en">
+    
+@await Html.PartialAsync("_Navbar")
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+
+    <title>My CV</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-header {
+            background-color: #343a40;
+            color: white;
+            padding: 60px 0;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .custom-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .custom-card-header {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .custom-card-body {
+            padding: 20px;
+        }
+
+        .custom-card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .custom-card-text span {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+
+    
+                <div class="card custom-card">
+                    <div class="card-header custom-card-header">
+                       Sertifikalar & Projelerim
+                    </div>
+                    <div class="card-body custom-card-body">
+                        <h5 class="card-title custom-card-title">Detaylı Özgeçmişim</h5>
+                        <p class="card-text custom-card-text">
+                             <span><strong>Projelerim:</strong> @Model.Text</span>
+                            <span><strong>Projelerim:</strong> @Model.Projects</span>
+                           <span><strong>Sertifikalar:</strong> <img src="~/images/@Model.Certificates"  class="img-fluid rounded-start"alt=" C# Certificates" /></span>
+                        </p>
+                    </div>
+                </div>
+           
+   
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</html>

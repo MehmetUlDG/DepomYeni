@@ -22,5 +22,10 @@ namespace MyCvWebSite.Controllers
         {
             return View(Repostory.bilgiler);
         }
+
+        public IActionResult Text(int id)
+        {
+            return View(Repostory.bilgiler);
+        }
     }
 }

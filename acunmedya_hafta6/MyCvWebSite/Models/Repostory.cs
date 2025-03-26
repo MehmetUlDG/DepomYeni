@@ -22,6 +22,10 @@ namespace MyCvWebSite.Models
             _bilgiler.Experience = "Yazılım Geliştirici";
             _bilgiler.Skills = "C#\n, C\n, GoLang\n, Java\n, Git\n, Github\n, SQL\n, Solidity\n";
             _bilgiler.Languages = "İngilizce-Pre_intermediate\n";
+            _bilgiler.Image = "images/AnaResim.jpg";
+            _bilgiler.Certificates="sertifika.png";
+            _bilgiler.Projects="MVC Şablonlu cv sitesi";
+            _bilgiler.Text="Bu siteyi MVC şablonu kullanarak oluşturdum. Bu siteyi oluştururken C# dili kullandım. Bu siteyi oluştururken HTML, CSS, JS, C# dillerini kullandım. Bu siteyi oluştururken Bootstrap kütüphanesini kullandım. Bu siteyi oluştururken Entity Framework kütüphanesini kullandım. Bu siteyi oluştururken SQL Server veritabanını kullandım. Bu siteyi oluştururken Git ve Github kullanarak sürüm kontrolü yaptım. Bu siteyi oluştururken Visual Studio Code ve Visual Studio 2019 IDE'lerini kullandım. Bu siteyi oluştururken Azure üzerinde yayınladım.";
         }
 
         public static Bilgiler bilgiler
@@ -30,6 +34,11 @@ namespace MyCvWebSite.Models
             {
                 return _bilgiler;
             }
+        }
+
+        public static Bilgiler? GetById(int id)
+        {   
+            return id == _bilgiler.Id ? _bilgiler : null;
         }
     }
 
@@ -47,5 +56,10 @@ namespace MyCvWebSite.Models
         public string? Languages { get; set; }
         public string? Description { get; set; }
         public string? Image { get; set; }
+        
+        public string? Projects { get; set; }
+        public string? Certificates { get; set; }
+        public string? Text { get; set; }
+        
     }
 }
