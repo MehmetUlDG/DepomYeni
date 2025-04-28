@@ -1,0 +1,22 @@
+@model Müsteri
+<form asp-controller="Müsteri" asp-action="Create" method=" post">
+
+    <div class=" mb-3">
+        <label asp-for="Ad" class="form-label"></label>
+        <input asp-for="Ad" class="form-control" />
+    </div>
+    <div class=" mb-3">
+        <label asp-for="Soyad" class="form-label"></label>
+        <input asp-for="Soyad" class="form-control" />
+    </div>
+
+    <div class=" mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class=" mb-3">
+        <label asp-for="Telefon" class="form-label"></label>
+        <input asp-for="Telefon" class="form-control" />
+    </div>
+    <button class=" btn btn-primary" type="submit ">Kaydet </button>
+</form>

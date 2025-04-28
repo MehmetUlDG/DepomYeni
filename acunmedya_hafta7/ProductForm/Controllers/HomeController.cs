@@ -1,0 +1,165 @@
+using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+using ProductForm.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
+namespace ProductForm.Controllers;
+
+public class HomeController : Controller
+{
+    public string CategoryId { get; private set; }
+
+    public IActionResult Index(string searchString)
+    {
+        ViewBag.SearchString = searchString;
+        var products = Repostory.Products;
+        if (!string.IsNullOrEmpty(searchString))
+        {
+            products = products.Where(p => p.Name.ToLower().Contains(searchString)).ToList();
+        }
+        var model = new ProductViewModel
+        {
+            Products = products,
+            Categories = Repostory.Categories,
+            SelectedCategory = CategoryId,
+        };
+        return View(model);
+    }
+    [HttpGet]
+    public IActionResult Create()
+    {
+        ViewBag.Categories = new SelectList(Repostory.Categories, "CategoryId", "Name");
+        return View();
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> Create(ProductModel model, IFormFile imageFile)
+    {
+
+        var allowenExtensions = new[] { ".jpg", ".png", ".jpeg" };
+
+        if (imageFile != null)
+        {
+            var extensions = Path.GetExtension(imageFile.FileName).ToLowerInvariant();
+
+            if (!allowenExtensions.Contains(extensions))
+            {
+                ModelState.AddModelError("", "Geçerli bir resim türü seçiniz!");
+            }
+            else
+            {
+                var randomFileName = string.Format($"{Guid.NewGuid().ToString()}{extensions}");
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", randomFileName);
+                try
+                {
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(stream);
+                    }
+                    model.image = randomFileName;
+                }
+                catch
+                {
+                    ModelState.AddModelError("", "Dosya yüklenirken bir hata oluştu.");
+                }
+            }
+        }
+        else
+        {
+            ModelState.AddModelError("", "Lütfen bir resim seçiniz.");
+        }
+        if (ModelState.IsValid)
+        {
+            model.ProductId = Repostory.Products.Count + 1;
+            Repostory.CreateProduct(model);
+            return RedirectToAction("Index");
+        }
+        ViewBag.Categories = new SelectList(Repostory.Categories, "CategoryId", "Name");
+        return View(model);
+    }
+    public IActionResult Edit(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+        var entity = Repostory.Products.FirstOrDefault(p => p.ProductId == id);
+        if (entity == null)
+        {
+            return NotFound();
+        }
+        ViewBag.Categories = new SelectList(Repostory.Categories, "CategoryId", "Name");
+        return View(entity);
+    }
+    [HttpPost]
+    public async Task<IActionResult> Edit(ProductModel model, IFormFile imageFile)
+    {
+
+        var allowenExtensions = new[] { ".jpg", ".png", ".jpeg" };
+
+        if (imageFile != null)
+        {
+            var extensions = Path.GetExtension(imageFile.FileName).ToLowerInvariant();
+
+            if (!allowenExtensions.Contains(extensions))
+            {
+                ModelState.AddModelError("", "Geçerli bir resim türü seçiniz!");
+            }
+            else
+            {
+                var randomFileName = string.Format($"{Guid.NewGuid().ToString()}{extensions}");
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", randomFileName);
+                try
+                {
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(stream);
+                    }
+                    model.image = randomFileName;
+                }
+                catch
+                {
+                    ModelState.AddModelError("", "Dosya yüklenirken bir hata oluştu.");
+                }
+            }
+        }
+        else
+        {
+            ModelState.AddModelError("", "Lütfen bir resim seçiniz.");
+        }
+        if (ModelState.IsValid)
+        {
+            Repostory.EditProduct(model);
+            return RedirectToAction("Index");
+        }
+        ViewBag.Categories = new SelectList(Repostory.Categories, "CategoryId", "Name");
+        return View(model);
+    }
+
+    public IActionResult Delete(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+        var entity = Repostory.Products.FirstOrDefault(p => p.ProductId == id);
+        if (entity == null)
+        {
+            return NotFound();
+        }
+        Repostory.DeleteProduct(entity);
+        return RedirectToAction("Index");
+    }
+
+    [HttpPost]
+    public IActionResult EditProducts(List<ProductModel> Products)
+    {
+        foreach (var product in Products)
+        {
+            Repostory.EditIsActive(product);
+        }
+        return RedirectToAction("Index");
+    }
+}
+
+  
+

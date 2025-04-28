@@ -1,0 +1,54 @@
+﻿@model ProductViewModel
+@using ProductForm.Models
+@using Microsoft.AspNetCore.Mvc.Rendering
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="card card-body my-3">
+    <form asp-action="Index" method="get">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-11">
+                    <select name="category"
+                       asp-items="@(new SelectList(Model.Categories, "CategoryId", "Name", Model.SelectedCategory))"
+
+                        class="form-select">
+                        <option value="0">Hepsi</option>
+                    </select>
+                </div>
+                <div class="col-md-1">
+                    <button type="submit" class="btn btn-primary">Filtrele</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Products.FirstOrDefault().ProductId)
+</th>
+            <th>@Html.DisplayNameFor(model =>model.Products.FirstOrDefault().image)</th>
+            <th>@Html.DisplayNameFor(model => model.Products.FirstOrDefault().Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Products.FirstOrDefault().Price)</th>
+            <th>Settings</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prd in Model.Products )
+        {
+        <tr>
+            <td>@prd.ProductId</td>
+            <td><img src="~/img/@prd.image" alt="" style="width: 100px; height: 100px;" /></td>
+            <td>@prd.Name</td>
+            <td>@prd.Price</td>
+            <td>
+                <a href="" class="btn btn-sm btn-warning">Edit</a>
+                <a href="" class="btn btn-sm btn-danger">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
