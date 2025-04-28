@@ -1,0 +1,31 @@
+@model Urun
+@{
+    ViewData["Title"] = "Ürün Güncelleme";
+}
+<h2>Ürün Güncelle</h2>
+<form asp-controller="Urun" asp-action="Edit" method="post">
+<input type="hidden" asp-for="UrunId" />
+    <div class=" mb-3">
+        <label asp-for="Ad" class="form-label"></label>
+        <input asp-for="Ad" class="form-control" />
+    </div>
+    <div class=" mb-3">
+        <label asp-for="Kategori" class="form-label"></label>
+        <input asp-for="Kategori" class="form-control" />
+    </div>
+
+    <div class=" mb-3">
+        <label asp-for="Fiyat" class="form-label"></label>
+        <input asp-for="Fiyat" class="form-control" />
+    </div>
+    <div class=" mb-3">
+        <label asp-for="StokMiktarı" class="form-label"></label>
+        <input asp-for="StokMiktarı" class="form-control" />
+    </div>
+     <div class=" mb-3"></div>
+        <label asp-for="Açıklama" class="form-label"></label>
+        <input asp-for="Açıklama" class="form-control" />
+    </div>
+
+    <button class=" btn btn-primary" type="submit ">Kaydet</button>
+</form>

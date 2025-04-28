@@ -36,8 +36,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mehme/DepomYeni/acunmedya_hafta8/efCoreApp/Views/Musteri/create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVxjcmVhdGUuY3NodG1s
+[C:/Users/mehme/DepomYeni/acunmedya_hafta8/efCoreApp/Views/Musteri/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/DepomYeni/acunmedya_hafta8/efCoreApp/Views/Musteri/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/DepomYeni/acunmedya_hafta8/efCoreApp/Views/Musteri/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mehme/DepomYeni/acunmedya_hafta8/efCoreApp/Views/Shared/Error.cshtml]

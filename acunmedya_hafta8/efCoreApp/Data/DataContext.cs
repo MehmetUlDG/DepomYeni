@@ -9,8 +9,8 @@ namespace efCoreApp.Data
         { }
 
 
-        public DbSet<Müsteri> Müsteriler => Set<Müsteri>();
-        public DbSet<Ürün> Ürünler => Set<Ürün>();
+        public DbSet<Musteri> Musteriler => Set<Musteri>();
+        public DbSet<Urun> Urunler => Set<Urun>();
         public DbSet<Siparis> Siparisler => Set<Siparis>();
 
 

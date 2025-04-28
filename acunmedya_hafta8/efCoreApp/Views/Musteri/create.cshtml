@@ -1,22 +1,32 @@
-@model Müsteri
-<form asp-controller="Müsteri" asp-action="Create" method=" post">
-
+@model Musteri
+@{
+    ViewData["Title"] = "Yeni Müşteri Ekle";
+}
+<form asp-controller="Musteri" asp-action="Create" method="post">
+ @Html.AntiForgeryToken()
     <div class=" mb-3">
         <label asp-for="Ad" class="form-label"></label>
         <input asp-for="Ad" class="form-control" />
+         <span asp-validation-for="Ad"></span>
     </div>
     <div class=" mb-3">
         <label asp-for="Soyad" class="form-label"></label>
         <input asp-for="Soyad" class="form-control" />
+         <span asp-validation-for="Soyad"></span>
     </div>
 
     <div class=" mb-3">
         <label asp-for="Email" class="form-label"></label>
         <input asp-for="Email" class="form-control" />
+         <span asp-validation-for="Email"></span>
     </div>
     <div class=" mb-3">
         <label asp-for="Telefon" class="form-label"></label>
         <input asp-for="Telefon" class="form-control" />
+         <span asp-validation-for="Telefon" ></span>
     </div>
     <button class=" btn btn-primary" type="submit ">Kaydet </button>
 </form>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

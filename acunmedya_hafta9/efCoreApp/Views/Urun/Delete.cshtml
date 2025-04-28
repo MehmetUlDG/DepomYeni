@@ -1,0 +1,14 @@
+@model Urun
+@{
+    ViewData["Title"] = "Ürün Sil";
+}
+<h2>Ürün Sil</h2>
+<p>
+    <b> @Model.Ad </b> adlı ürün silinecek. Onaylıyor musunuz?
+    <form asp-action="Delete" method="post">
+        <!-- Name attribute'ta boşluk olmamalı -->
+        <input type="hidden" asp-for="UrunId" name="Id"/>
+        <input type="submit" value="Sil" class="btn btn-danger" /> 
+        <a asp-action="Index" class=" btn btn-secondary">İptal</a>
+    </form>
+</p>

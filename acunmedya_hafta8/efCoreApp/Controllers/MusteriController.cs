@@ -10,6 +10,11 @@ namespace efCoreApp.Controllers
         {
             _context = context;
         }
+        public async Task<IActionResult> Index()
+        {
+            var musteriler = await _context.Musteriler.ToListAsync();
+            return View(musteriler);
+        }
         [HttpGet]
         public IActionResult Create()
         {
@@ -17,12 +22,17 @@ namespace efCoreApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Müsteri model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Musteri model)
         {
-
-            _context.Müsteriler.Add(model);
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            _context.Musteriler.Add(model);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "Home");
+
         }
 
 
