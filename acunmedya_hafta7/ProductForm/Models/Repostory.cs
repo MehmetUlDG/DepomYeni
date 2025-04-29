@@ -24,6 +24,32 @@ namespace ProductForm.Models
           public static void CreateProduct(ProductModel entity){
             products.Add(entity);
           }
+            public static void EditProduct(ProductModel updateProduct){
+            var entity = products.FirstOrDefault(p=>p.ProductId == updateProduct.ProductId);
+
+            if(entity != null){
+                if(!string.IsNullOrEmpty(updateProduct.Name)){
+                entity.Name = updateProduct.Name;
+                }
+                entity.Price = updateProduct.Price;
+                entity.image= updateProduct.image;
+                entity.IsActive = updateProduct.IsActive;
+                entity.CategoryId = updateProduct.CategoryId;
+            }
+        }
+         public static void EditIsActive(ProductModel updateProduct){
+            var entity = products.FirstOrDefault(p=>p.ProductId == updateProduct.ProductId);
+
+            if(entity != null){
+                entity.IsActive = updateProduct.IsActive;
+            }
+        }
+         public static void DeleteProduct(ProductModel entity){
+            var PrdEntity = products.FirstOrDefault(p=>p.ProductId == entity.ProductId);
+            if(PrdEntity != null){
+                products.Remove(PrdEntity);
+            }
+        }
             public static List<CategoryModel> Categories{get{return categories;}}
 
        

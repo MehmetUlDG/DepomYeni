@@ -897,6 +897,170 @@
       ]
     },
     {
+      "Route": "img/1f1d70fd-9185-42d6-b061-71f856e414da.es2js671ww.png",
+      "AssetFile": "img/1f1d70fd-9185-42d6-b061-71f856e414da.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ikdd5NokzCfMtHwm/o454cyPj0P1W7yxvpmsw+aiYoU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 15:40:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "es2js671ww"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ikdd5NokzCfMtHwm/o454cyPj0P1W7yxvpmsw+aiYoU="
+        },
+        {
+          "Name": "label",
+          "Value": "img/1f1d70fd-9185-42d6-b061-71f856e414da.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/1f1d70fd-9185-42d6-b061-71f856e414da.png",
+      "AssetFile": "img/1f1d70fd-9185-42d6-b061-71f856e414da.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ikdd5NokzCfMtHwm/o454cyPj0P1W7yxvpmsw+aiYoU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 15:40:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ikdd5NokzCfMtHwm/o454cyPj0P1W7yxvpmsw+aiYoU="
+        }
+      ]
+    },
+    {
+      "Route": "img/53a04aa5-bcc1-4391-aeea-02ffc603566e.png",
+      "AssetFile": "img/53a04aa5-bcc1-4391-aeea-02ffc603566e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71292"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QxJH7SN/juYCLmaTsBv0xB24TOCqL6LwBzMt45KWdOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:17:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QxJH7SN/juYCLmaTsBv0xB24TOCqL6LwBzMt45KWdOE="
+        }
+      ]
+    },
+    {
+      "Route": "img/53a04aa5-bcc1-4391-aeea-02ffc603566e.z80or0k7tp.png",
+      "AssetFile": "img/53a04aa5-bcc1-4391-aeea-02ffc603566e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71292"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QxJH7SN/juYCLmaTsBv0xB24TOCqL6LwBzMt45KWdOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:17:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z80or0k7tp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QxJH7SN/juYCLmaTsBv0xB24TOCqL6LwBzMt45KWdOE="
+        },
+        {
+          "Name": "label",
+          "Value": "img/53a04aa5-bcc1-4391-aeea-02ffc603566e.png"
+        }
+      ]
+    },
+    {
       "Route": "img/Iphone15.0jctd05ksp.jpg",
       "AssetFile": "img/Iphone15.jpg",
       "Selectors": [],

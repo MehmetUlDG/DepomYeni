@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+Zrjlk/e0zcZigghysFSU0ENOw4k1XNccjIbErqcOOU=",
+  "Hash": "pep3GlI0IxfwKWXOhJejjE5+teM+kDIFXjWdrtQmO8E=",
   "Source": "ProductForm",
   "BasePath": "_content/ProductForm",
   "Mode": "Default",
@@ -1443,6 +1443,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta7\\ProductForm\\wwwroot\\img\\1f1d70fd-9185-42d6-b061-71f856e414da.png",
+      "SourceId": "ProductForm",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta7\\ProductForm\\wwwroot\\",
+      "BasePath": "_content/ProductForm",
+      "RelativePath": "img/1f1d70fd-9185-42d6-b061-71f856e414da#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "es2js671ww",
+      "Integrity": "Ikdd5NokzCfMtHwm/o454cyPj0P1W7yxvpmsw+aiYoU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\1f1d70fd-9185-42d6-b061-71f856e414da.png"
+    },
+    {
+      "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta7\\ProductForm\\wwwroot\\img\\53a04aa5-bcc1-4391-aeea-02ffc603566e.png",
+      "SourceId": "ProductForm",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta7\\ProductForm\\wwwroot\\",
+      "BasePath": "_content/ProductForm",
+      "RelativePath": "img/53a04aa5-bcc1-4391-aeea-02ffc603566e#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z80or0k7tp",
+      "Integrity": "QxJH7SN/juYCLmaTsBv0xB24TOCqL6LwBzMt45KWdOE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\53a04aa5-bcc1-4391-aeea-02ffc603566e.png"
     },
     {
       "Identity": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta7\\ProductForm\\wwwroot\\img\\Iphone15.jpg",
@@ -3404,6 +3446,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "img/1f1d70fd-9185-42d6-b061-71f856e414da.es2js671ww.png",
+      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta7\\ProductForm\\wwwroot\\img\\1f1d70fd-9185-42d6-b061-71f856e414da.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ikdd5NokzCfMtHwm/o454cyPj0P1W7yxvpmsw+aiYoU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 15:40:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "es2js671ww"
+        },
+        {
+          "Name": "label",
+          "Value": "img/1f1d70fd-9185-42d6-b061-71f856e414da.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ikdd5NokzCfMtHwm/o454cyPj0P1W7yxvpmsw+aiYoU="
+        }
+      ]
+    },
+    {
+      "Route": "img/1f1d70fd-9185-42d6-b061-71f856e414da.png",
+      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta7\\ProductForm\\wwwroot\\img\\1f1d70fd-9185-42d6-b061-71f856e414da.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ikdd5NokzCfMtHwm/o454cyPj0P1W7yxvpmsw+aiYoU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 15:40:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ikdd5NokzCfMtHwm/o454cyPj0P1W7yxvpmsw+aiYoU="
+        }
+      ]
+    },
+    {
+      "Route": "img/53a04aa5-bcc1-4391-aeea-02ffc603566e.png",
+      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta7\\ProductForm\\wwwroot\\img\\53a04aa5-bcc1-4391-aeea-02ffc603566e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71292"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QxJH7SN/juYCLmaTsBv0xB24TOCqL6LwBzMt45KWdOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:17:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QxJH7SN/juYCLmaTsBv0xB24TOCqL6LwBzMt45KWdOE="
+        }
+      ]
+    },
+    {
+      "Route": "img/53a04aa5-bcc1-4391-aeea-02ffc603566e.z80or0k7tp.png",
+      "AssetFile": "C:\\Users\\mehme\\DepomYeni\\acunmedya_hafta7\\ProductForm\\wwwroot\\img\\53a04aa5-bcc1-4391-aeea-02ffc603566e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71292"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QxJH7SN/juYCLmaTsBv0xB24TOCqL6LwBzMt45KWdOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:17:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z80or0k7tp"
+        },
+        {
+          "Name": "label",
+          "Value": "img/53a04aa5-bcc1-4391-aeea-02ffc603566e.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QxJH7SN/juYCLmaTsBv0xB24TOCqL6LwBzMt45KWdOE="
         }
       ]
     },
