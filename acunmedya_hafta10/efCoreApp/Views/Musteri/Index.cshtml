@@ -1,0 +1,32 @@
+@using efCoreApp.Models
+@model IEnumerable<Musteri>
+<h2>Müşteri Listesi</h2>
+<a asp-controller="Musteri" asp-action="Create" class="btn btn-primary">Yeni Müşteri Ekle</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.MusteriId)</th>
+            <th>@Html.DisplayNameFor(m => m.Ad)</th>
+            <th>@Html.DisplayNameFor(m => m.Soyad)</th>
+
+            <th style="width: 150px;">Ayarlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.MusteriId)</td>
+                <td>@Html.DisplayFor(modelItem => item.Ad)</td>
+                <td>@Html.DisplayFor(modelItem => item.Soyad)</td>
+
+                <td><a asp-controller="Musteri" asp-action="Edit" asp-route-Id="@item.MusteriId"
+                        class=" btn btn-sm btn-warning">Düzenle</a>
+                <td><a asp-controller="Musteri" asp-action="Delete" asp-route-Id="@item.MusteriId"
+                        class=" btn btn-sm btn-danger">Sil</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

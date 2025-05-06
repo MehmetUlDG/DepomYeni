@@ -75,6 +75,10 @@ namespace efCoreApp.Migrations
 
                     b.HasKey("SiparisId");
 
+                    b.HasIndex("MusteriId");
+
+                    b.HasIndex("UrunId");
+
                     b.ToTable("Siparisler");
                 });
 
@@ -84,11 +88,7 @@ namespace efCoreApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Ad")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Açıklama")
+                    b.Property<string>("Aciklama")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -99,12 +99,43 @@ namespace efCoreApp.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("StokMiktarı")
+                    b.Property<int>("StokMiktari")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("UrunAd")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("UrunBarkod")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("UrunId");
 
                     b.ToTable("Urunler");
+                });
+
+            modelBuilder.Entity("efCoreApp.Data.Siparis", b =>
+                {
+                    b.HasOne("efCoreApp.Data.Musteri", "Musteri")
+                        .WithMany("Siparisler")
+                        .HasForeignKey("MusteriId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("efCoreApp.Data.Urun", "Urun")
+                        .WithMany()
+                        .HasForeignKey("UrunId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Musteri");
+
+                    b.Navigation("Urun");
+                });
+
+            modelBuilder.Entity("efCoreApp.Data.Musteri", b =>
+                {
+                    b.Navigation("Siparisler");
                 });
 #pragma warning restore 612, 618
         }

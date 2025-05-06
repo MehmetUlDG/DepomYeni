@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Net.Http.Headers;
-namespace efCoreApp.Data
+namespace acunmedya_hafta10.Data
 {
     public class DataContext : DbContext
     {

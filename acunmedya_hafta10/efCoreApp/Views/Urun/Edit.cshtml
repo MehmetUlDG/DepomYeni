@@ -1,0 +1,82 @@
+@model Urun
+@{
+    ViewData["Title"] = "Edit";
+}
+<h1>Güncelleme Ekranı</h1>
+<hr>
+<div class="row">
+
+
+    <div class="col-8">
+        <form asp-controller="Urun" asp-action="Edit" method="post">
+            <input type="hidden" asp-for="UrunId" />
+
+            <div class="mb-3">
+                <label asp-for="Ad" class="form-label"></label>
+                <input asp-for="Ad" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Kategori" class="form-label"></label>
+                <input asp-for="Kategori" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Fiyat" class="form-label"></label>
+                <input asp-for="Fiyat" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="StokMiktarı" class="form-label"></label>
+                <input asp-for="StokMiktarı" class="form-control" />
+            </div>
+           
+    <div class="mb-3">
+        <label asp-for="Açıklama" class="form-label"></label>
+        <input asp-for="Açıklama" class="form-control" />
+    </div>
+
+    <button class="btn btn-primary" type="submit">Kaydet</button>
+    </form>
+
+</div>
+<div class="col-12">
+    <h4>Ürünü Satın Alan Müşteriler</h4>
+    <hr />
+
+    @if (Model.Siparisler != null && Model.Siparisler.Any())
+    {
+        <div class="row">
+            @foreach (var item in Model.Siparisler)
+            {
+                <div class="col-md-4 mb-3">
+                    <div class="card border-primary shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            Sipariş ID: @item.SiparisId
+                        </div>
+                        <div class="card-body">
+                            @if (item.Musteri != null)
+                            {
+                                <h5 class="card-title">@item.Musteri.AdSoyad</h5>
+                                <p class="card-text">
+                                    <strong>E-Mail: </strong>@item.Musteri.Email<br />
+                                    <strong>Telefon: </strong>@item.Musteri.Telefon<br />
+                                </p>
+                            }
+                            else
+                            {
+                                <p class="text-danger">Ürün bilgisi bulunamadı.</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p class="text-muted">Bu müşteriye ait sipariş bulunmamaktadır.</p>
+    }
+</div>
+
+</div>

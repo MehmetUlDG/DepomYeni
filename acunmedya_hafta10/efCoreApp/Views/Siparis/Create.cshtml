@@ -1,0 +1,22 @@
+
+@model Siparis
+
+
+<form asp-controller="Siparis" asp-action="Create" method="post">
+    <div class=" mb-3"></div>
+        <label asp-for="UrunId" class="form-label"></label>
+       <select asp-for="UrunId" asp-items="ViewBag.Urunler">
+            <option selected>Seçiniz</option>
+           
+        </select>
+    </div>
+   
+         <div class=" mb-3"></div>
+        <label asp-for="MusteriId" class="form-label"></label>
+         <select asp-for="MusteriId" asp-items="ViewBag.Musteriler"></select>
+            <option selected>Seçiniz</option>
+           
+        </select>
+    </div>
+    <button class="btn btn-primary" type="submit">Kaydet </button>
+</form>   

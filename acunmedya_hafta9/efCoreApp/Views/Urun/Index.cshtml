@@ -5,10 +5,11 @@
     <thead>
         <tr>
             <th>@Html.DisplayNameFor(m => m.UrunId)</th>
-            <th>@Html.DisplayNameFor(m => m.Ad)</th>
+            <th>@Html.DisplayNameFor(m => m.UrunAd)</th>
             <th>@Html.DisplayNameFor(m => m.Fiyat)</th>
-             <th>@Html.DisplayNameFor(m => m.StokMiktarı)</th>
-            <th>@Html.DisplayNameFor(m => m.Açıklama)</th>
+             <th>@Html.DisplayNameFor(m => m.StokMiktari)</th>
+            <th>@Html.DisplayNameFor(m => m.Aciklama)</th>
+            <th>@Html.DisplayNameFor(m=>m.UrunBarkod)</th>
 
             <th style="width: 150px;">Ayarlar</th>
         </tr>
@@ -18,11 +19,11 @@
         {
             <tr>
                 <td>@Html.DisplayFor(modelItem => item.UrunId)</td>
-                <td>@Html.DisplayFor(modelItem => item.Ad)</td>
+                <td>@Html.DisplayFor(modelItem => item.UrunAd)</td>
                 <td>@Html.DisplayFor(modelItem => item.Fiyat)</td>
-                <td>@Html.DisplayFor(modelItem => item.StokMiktarı)</td>
-                <td>@Html.DisplayFor(modelItem => item.Açıklama)</td>
-
+                <td>@Html.DisplayFor(modelItem => item.StokMiktari)</td>
+                <td>@Html.DisplayFor(modelItem => item.Aciklama)</td>
+                <td>@Html.DisplayFor(modelItem => item.UrunBarkod)</td>
                 <td><a asp-controller="Urun" asp-action="Edit" asp-route-Id="@item.UrunId"
                         class=" btn btn-sm btn-warning">Düzenle</a>
                 <td><a asp-controller="Urun" asp-action="Delete" asp-route-Id="@item.UrunId"

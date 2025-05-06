@@ -1,0 +1,14 @@
+@model Siparis
+@{
+    ViewData["Title"] = "Siparis Sil";
+}
+<h2>Siparis Sil</h2>
+<p>
+    <b> @Model.SiparisId </b> no'lu siparis silinecek. Onaylıyor musunuz?
+    <form asp-action="Delete" method="post">
+    
+        <input type="hidden" asp-for="SiparisId" name="Id"/>
+        <input type="submit" value="Sil" class="btn btn-danger" /> 
+        <a asp-action="Index" class=" btn btn-secondary">İptal</a>
+    </form>
+</p>

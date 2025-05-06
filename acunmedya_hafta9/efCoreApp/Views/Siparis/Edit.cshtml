@@ -1,0 +1,24 @@
+@model Siparis
+@{
+    ViewData["Title"] = "Sipariş Güncelle";
+}
+<h2>Siparis Güncelle</h2>
+<form asp-controller="Siparis" asp-action="Edit" method="post">
+<input type="hidden" asp-for="SiparisId" />
+        
+  <div class=" mb-3"></div>
+        <label asp-for="UrunId" class="form-label"></label>
+       <select asp-items="ViewBag.Urunler" class="form-select" >
+            <option selected>Seçiniz</option>
+           
+        </select>
+    </div>
+   
+         <div class=" mb-3"></div>
+        <label asp-for="MusteriId" class="form-label"></label>
+       <select asp-items="ViewBag.Musteriler" class="form-select">
+            <option selected>Seçiniz</option>
+           
+        </select>
+    <button class=" btn btn-primary" type="submit ">Kaydet</button>
+</form>

@@ -15,7 +15,7 @@ namespace efCoreApp.Migrations
                 name: "Musteriler",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                    MusteriId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Ad = table.Column<string>(type: "TEXT", nullable: false),
                     Soyad = table.Column<string>(type: "TEXT", nullable: false),
@@ -26,7 +26,7 @@ namespace efCoreApp.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Musteriler", x => x.Id);
+                    table.PrimaryKey("PK_Musteriler", x => x.MusteriId);
                 });
 
             migrationBuilder.CreateTable(
@@ -56,7 +56,8 @@ namespace efCoreApp.Migrations
                     Kategori = table.Column<string>(type: "TEXT", nullable: false),
                     Fiyat = table.Column<decimal>(type: "TEXT", nullable: false),
                     StokMiktarı = table.Column<int>(type: "INTEGER", nullable: false),
-                    Açıklama = table.Column<string>(type: "TEXT", nullable: false)
+                    Açıklama = table.Column<string>(type: "TEXT", nullable: false),
+                    UrunBarkod = table.Column<Guid>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

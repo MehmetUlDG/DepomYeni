@@ -28,7 +28,7 @@ namespace efCoreApp.Controllers
         [HttpPost]
         public IActionResult Create(Urun urun)
         {
-
+            urun.UrunBarkod = Guid.NewGuid();
             _context.Urunler.Add(urun);
             _context.SaveChanges();
             return RedirectToAction("Index");
@@ -53,7 +53,7 @@ namespace efCoreApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int? Id, Urun model)
         {
-            if (Id != model.UrunId)
+            if (Id!= model.UrunId)
             {
                 return NotFound();
             }
@@ -90,7 +90,7 @@ namespace efCoreApp.Controllers
                 return NotFound();
             }
 
-            var urunler = await _context.Urunler.FirstOrDefaultAsync(urunler => urunler.UrunId== Id);
+            var urunler = await _context.Urunler.FirstOrDefaultAsync(urunler => urunler.UrunId==Id);
             if (urunler == null)
             {
                 return NotFound();

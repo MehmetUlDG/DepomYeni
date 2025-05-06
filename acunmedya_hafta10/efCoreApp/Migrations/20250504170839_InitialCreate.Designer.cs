@@ -11,7 +11,7 @@ using efCoreApp.Data;
 namespace efCoreApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250428134252_InitialCreate")]
+    [Migration("20250504170839_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -22,7 +22,7 @@ namespace efCoreApp.Migrations
 
             modelBuilder.Entity("efCoreApp.Data.Musteri", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("MusteriId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -49,7 +49,7 @@ namespace efCoreApp.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Id");
+                    b.HasKey("MusteriId");
 
                     b.ToTable("Musteriler");
                 });
@@ -104,6 +104,9 @@ namespace efCoreApp.Migrations
 
                     b.Property<int>("StokMiktarı")
                         .HasColumnType("INTEGER");
+
+                    b.Property<Guid>("UrunBarkod")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("UrunId");
 

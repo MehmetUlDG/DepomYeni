@@ -1,0 +1,14 @@
+@model Musteri
+@{
+    ViewData["Title"] = "Delete";
+}
+<h1>Silme Ekranı</h1>
+
+<p>
+    <b>@Model.AdSoyad</b> adlı müşteri silinecek. Bu işlem geri alınamaz. Silmek istediğinize emin misiniz?
+    <form asp-action="Delete" method="post">
+        <input type="hidden" value="@Model.MusteriId" name="MusteriId" />
+       <button type="submit" class="btn btn-danger">Evet</button>
+        <a asp-action="Index" class="btn btn-primary">Hayır</a>
+    </form>
+</p>

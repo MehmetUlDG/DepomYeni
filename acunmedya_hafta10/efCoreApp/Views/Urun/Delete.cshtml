@@ -1,0 +1,14 @@
+@model Urun
+@{
+    ViewData["Title"] = "Delete";
+}
+<h1>Silme Ekranı</h1>
+
+<p>
+    <b>@Model.Ad</b> adlı ürün silinecek. Bu işlem geri alınamaz. Silmek istediğinize emin misiniz?
+    <form  asp-controller="Urun" asp-action="Delete" method="post">
+        <input type="hidden" value="@Model.UrunId" name="UrunId" />
+       <button type="submit" class="btn btn-danger">Evet</button>
+        <a asp-action="Index" class="btn btn-primary">Hayır</a>
+    </form>
+</p>
