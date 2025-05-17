@@ -1,0 +1,12 @@
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\bin\Debug\net9.0\ProductApp.Entities.deps.json
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\bin\Debug\net9.0\ProductApp.Entities.dll
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\bin\Debug\net9.0\ProductApp.Entities.pdb
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\obj\Debug\net9.0\ProductApp.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\obj\Debug\net9.0\ProductApp.Entities.AssemblyInfoInputs.cache
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\obj\Debug\net9.0\ProductApp.Entities.AssemblyInfo.cs
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\obj\Debug\net9.0\ProductApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\obj\Debug\net9.0\ProductApp.Entities.sourcelink.json
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\obj\Debug\net9.0\ProductApp.Entities.dll
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\obj\Debug\net9.0\refint\ProductApp.Entities.dll
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\obj\Debug\net9.0\ProductApp.Entities.pdb
+C:\Users\mehme\DepomYeni\ProductApp\ProductApp.Entities\obj\Debug\net9.0\ref\ProductApp.Entities.dll
