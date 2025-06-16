@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "UqCA73A1LLVyekXYaCwJZBX7HlYvClX1VFxTcdPhpes=",
+  "Source": "ToDoApp.WebAPI",
+  "BasePath": "_content/ToDoApp.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

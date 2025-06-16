@@ -1,0 +1,12 @@
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\bin\Debug\net9.0\ToDoApp.Entities.deps.json
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\bin\Debug\net9.0\ToDoApp.Entities.dll
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\bin\Debug\net9.0\ToDoApp.Entities.pdb
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\obj\Debug\net9.0\ToDoApp.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\obj\Debug\net9.0\ToDoApp.Entities.AssemblyInfoInputs.cache
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\obj\Debug\net9.0\ToDoApp.Entities.AssemblyInfo.cs
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\obj\Debug\net9.0\ToDoApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\obj\Debug\net9.0\ToDoApp.Entities.sourcelink.json
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\obj\Debug\net9.0\ToDoApp.Entities.dll
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\obj\Debug\net9.0\refint\ToDoApp.Entities.dll
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\obj\Debug\net9.0\ToDoApp.Entities.pdb
+C:\Users\mehme\DepomYeni\ToDoApp\ToDoApp.Entities\obj\Debug\net9.0\ref\ToDoApp.Entities.dll
