@@ -38,7 +38,6 @@ internal class Program
         builder.Services.AddScoped<IToDoUserRepository, ToDoUserRepository>();
         builder.Services.AddScoped<IToDoTaskService, ToDoTaskManager>();
         builder.Services.AddScoped<IToDoUserService, ToDoUserManager>();
-        builder.Services.AddScoped<IGoogleCalendarService, GoogleCalendarManager>();
         builder.Services.AddScoped<TokenHelper>();
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
@@ -97,8 +96,8 @@ internal class Program
             {
                 Reference = new OpenApiReference
                 {
-                    Id = "oauth2",
-                    Type = ReferenceType.SecurityScheme
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "oauth2"
                 }
             },
             new[] { "https://www.googleapis.com/auth/calendar", "https://www.googleapis.com/auth/userinfo.email" }

@@ -1,4 +1,5 @@
 using ToDoApp.Entities;
+using ToDoApp.Entities.Dto;
 
 namespace ToDoApp.DataAccess
 {
@@ -81,10 +82,9 @@ namespace ToDoApp.DataAccess
             {
                 throw new KeyNotFoundException($"Kullanıcı ID {user.Id} bulunamadı");
             }
-            existingUser.Name = user.Name;
-            existingUser.Email = user.Email;
-            existingUser.Surname = user.Surname;
-            existingUser.IsGoogleLinked = user.IsGoogleLinked;
+            existingUser.Name = user.Name!;
+            existingUser.Email = user.Email!;
+            existingUser.Surname = user.Surname!;
             _context.ToDoUsers.Update(existingUser);
             _context.SaveChanges();
         }

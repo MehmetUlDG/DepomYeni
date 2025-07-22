@@ -2,7 +2,7 @@ using System.Security.Cryptography;
 using System.Text;
 namespace ToDoApp.Bussiness.Helpers
 {
-        public static class PasswordHelper
+    public static class PasswordHelper
     {
         public static void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
@@ -16,5 +16,6 @@ namespace ToDoApp.Bussiness.Helpers
             var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
             return computedHash.SequenceEqual(storedHash);
         }
+        
     }
 }

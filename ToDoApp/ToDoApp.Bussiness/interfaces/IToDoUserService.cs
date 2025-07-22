@@ -1,5 +1,6 @@
 
 using ToDoApp.Entities;
+using ToDoApp.Entities.Dto;
 namespace ToDoApp.Bussines
 {
     public interface IToDoUserService
@@ -35,7 +36,7 @@ namespace ToDoApp.Bussines
         /// Api'den gelen istek üzerine kullanıcı bilgilerini günceller. 
         /// </summary>
         /// <param name="user">ToDoUser entitisinden bir nesne oluşturulur.Onu temsil eder.</param>
-        void UpdateUser(ToDoUser user);
+        void UpdateUser(UserDto user);
         /// <summary>
         /// Kullanıcının geçerli access token'ı ve refresh token'ı ile yeni bir access token üretir.
         /// Gerekirse refresh token'ı da yeniler ve günceller.

@@ -14,20 +14,21 @@ namespace ToDoApp.WebAPI.Controllers
     {
         private readonly IToDoTaskService _service;
         private readonly IToDoUserService _uservice;
-        private readonly IConfiguration _configuration;
+        private readonly IConfiguration _configuration; //Geliştirmek için kullanılabilir.
         public ToDoTaskController(IToDoTaskService service, IConfiguration configuration, IToDoUserService uservice)
         {
             _service = service;
             _configuration = configuration;
             _uservice = uservice;
         }
-
+        // Tüm Etkinlikleri Listeleme 
         [HttpGet]
         public IActionResult GetAllTasks()
         {
             _service.GetAllTasks();
             return Ok();
         }
+        // Id'ye göre etkinlik listeleme
         [Authorize]
         [HttpGet("task/{id:int}")]
         public IActionResult GetTaskById(int id)
@@ -36,7 +37,7 @@ namespace ToDoApp.WebAPI.Controllers
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
             if (userIdClaim == null)
                 return Unauthorized("Geçersiz token. Kullanıcı ID bulunamadı.");
-            int userId = int.Parse(userIdClaim.Value);
+            int userId = int.Parse(userIdClaim!.Value);
             var u = _uservice.GetUserById(userId);
             if (u == null)
                 return NotFound("Kullanıcı bulunamadı.");
@@ -50,22 +51,22 @@ namespace ToDoApp.WebAPI.Controllers
 
             return Ok(t);
         }
-
+        // Belirtilen kullanıcı Id 'sine göre o kullanıcının etkinliklerini listeleme
         [HttpGet("user/{userId:int}")]
         public IActionResult GetTasksByUserId(int userId)
         {
             var u = _service.GetTasksByUserId(userId);
             return u == null ? NotFound() : Ok(u);
         }
-
+        // Belirtilen GoogleEventId'ye göre etkinlikleri listeleme 
         [HttpGet("google/{googleEventId}")]
         public IActionResult GetTaskByGoogleEventId(string googleEventId)
         {
             var Event = _service.GetTaskByGoogleEventId(googleEventId);
             return Event == null ? NotFound() : Ok(Event);
         }
-
-        [HttpPost("AddTask")]
+        // Etkinlik ekleme 
+        [HttpPost("AddTask/{userId:int}")]
         public async Task<IActionResult> AddTaskAsync([FromBody] TaskDetailsDto dto)
         {
             var user = _uservice.GetUserById(dto.UserId);
@@ -86,8 +87,8 @@ namespace ToDoApp.WebAPI.Controllers
             await _service.AddTaskAsync(task, user);
             return Ok("Harika!Etkinliğiniz oluşturuldu.");
         }
-
-        [HttpPut]
+        // Etkinlik güncelleme 
+        [HttpPut("update/{id:int}")]
         public async Task<IActionResult> UpdateTaskAsync([FromBody] ToDoTask task)
         {
             var user = _uservice.GetUserById(task.UserId);
@@ -98,29 +99,26 @@ namespace ToDoApp.WebAPI.Controllers
             if (existingTask == null)
                 return BadRequest();
 
-            if (existingTask.UserId != user.Id)
+          if (existingTask.UserId != user.Id)
                 return Forbid("Bu işlem için yetkiniz yoktur.");
 
             await _service.UpdateTask(task, user);
             return Ok("Güncelleme işlemi başarılı.");
 
         }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTaskAsync(int id, TaskDetailsDto dto)
+        // Id'ye göre etkinlik silme 
+        [HttpDelete("delete/{id}")]
+        public async Task<IActionResult> DeleteTaskAsync(int id)
         {
-            var user = _uservice.GetUserById(dto.UserId);
-            if (user == null)
-                return BadRequest();
+          
 
             var task = _service.GetTaskById(id);
             if (task == null)
                 return BadRequest();
 
-            if (task.UserId != user.Id)
-                return Forbid("Bu işlem için yetkiniz yoktur.");
+         
 
-            await _service.DeleteTask(id, user);
+            await _service.DeleteTask(id);
             return Ok("Silme işlemi başarılı.");
         }
     }

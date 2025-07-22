@@ -1,17 +1,19 @@
 using ToDoApp.Bussines;
 using ToDoApp.Entities;
 using ToDoApp.DataAccess;
+using ToDoApp.Entities.Dto;
+using ToDoApp.Bussiness.Helpers;
 
 namespace ToDoApp.Bussiness
 {
     public class ToDoUserManager : IToDoUserService
     {
         private readonly IToDoUserRepository _repo;
-        private readonly IGoogleCalendarService _googleService;
-        public ToDoUserManager(IToDoUserRepository repo, IGoogleCalendarService googleService)
+
+        public ToDoUserManager(IToDoUserRepository repo)
         {
             _repo = repo;
-            _googleService = googleService;
+
         }
 
         public void AddUser(ToDoUser user)
@@ -83,17 +85,25 @@ namespace ToDoApp.Bussiness
             _repo.UpdateGoogleTokens(userId, accessToken, refreshToken, tokenExpiry);
         }
 
-        public void UpdateUser(ToDoUser user)
+        public void UpdateUser(UserDto user)
         {
             var existingUser = _repo.GetUserById(user.Id);
             if (existingUser == null)
             {
                 throw new ArgumentException("User not found", nameof(user));
             }
-            existingUser.Name = user.Name;
-            existingUser.Email = user.Email;
-            existingUser.Surname = user.Surname;
-            existingUser.IsGoogleLinked = user.IsGoogleLinked;
+            // byte[] passwordHash; //şifreleme işlemleri 
+            //byte[] passwordSalt;
+            //PasswordHelper.CreatePasswordHash(user.Password!, out passwordHash, out passwordSalt);
+            if (!string.IsNullOrWhiteSpace(user.Password))
+            {
+                PasswordHelper.CreatePasswordHash(user.Password, out var hash, out var salt);
+                existingUser.PasswordHash = hash;
+                existingUser.PasswordSalt = salt;
+            }
+            existingUser.Name = user.Name!;
+            existingUser.Email = user.Email!;
+            existingUser.Surname = user.Surname!;
             _repo.UpdateUser(existingUser);
             _repo.SaveChanges();
         }

@@ -42,7 +42,7 @@ namespace ToDoApp.DataAccess
         /// <returns> DbContext üzerinden FirstOrDefault metodunu kullanarak veritabanından arama yapar ve bu değeri döndürür.</returns>
         ToDoTask? GetTaskByGoogleEventId(string googleEventId);
         /// <summary>
-        ///  Id'si girilen kullanıcın etkinliklerini listeler.
+        ///  GoogleEventeId'si girilen etkinlikleri listeler.
         /// </summary>
         /// <param name="userId"> ToDoTask entitisindeki UserId ye karşılık gelir.</param>
         /// <returns> DbContext üzerinden Where metodunu kullanarak veritabanından listeleme yapar ve bu değeri döndürür.</returns>

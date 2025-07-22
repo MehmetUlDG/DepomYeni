@@ -31,7 +31,7 @@ namespace ToDoApp.Bussiness
         /// </summary>
         /// <param name="id">Silinmek istenen görevin benzersiz kimliği.</param>
         /// <param name="user">Görevi silen kullanıcı.</param>
-        Task DeleteTask(int id, ToDoUser user);
+        Task DeleteTask(int id);
         /// <summary>
         /// Google Calendar etkinlik ID'sine göre ilgili görevi getirir.
         /// </summary>

@@ -15,7 +15,7 @@ namespace ToDoApp.WebAPI.Controllers
     public class ToDoUserController : ControllerBase
     {
         private readonly IToDoUserService _service;
-        private readonly IConfiguration _configuration;
+        private readonly IConfiguration _configuration; // Geliştirmek için kullanılabilir.
         private readonly TokenHelper _tokenHelper;
 
         public ToDoUserController(IToDoUserService service, IConfiguration configuration, TokenHelper tokenHelper)
@@ -24,28 +24,31 @@ namespace ToDoApp.WebAPI.Controllers
             _configuration = configuration;
             _tokenHelper = tokenHelper;
         }
+        // Uygulamaya kayıtlı tüm kullanıcıları listeleme.(Bu Api sadece geleiştirici tarafından test amaçlı oluşturulmuştur.)
         [HttpGet]
         public IActionResult GetAllUsers() => Ok(_service.GetAllUsers());
-
+        // Belirtilen kullanıcı Id'sine göre kulanıcıyı listeler.
         [HttpGet("{id}")]
         public IActionResult GetUserById(int id)
         {
             var u = _service.GetUserById(id);
             return u == null ? NotFound() : Ok(u);
         }
-
+        // Kullanıcının e-posta bilgisine göre kullanıcıyı listeler.
         [HttpGet("email/{email}")]
         public IActionResult GetUserByEmail(string email)
         {
             var u = _service.GetUserByEmail(email);
             return u == null ? NotFound() : Ok(u);
         }
+        //Kullanıcının google ile bağlanıp bağlanmadığını gösterir.
         [HttpGet("linked-google")]
         public IActionResult GetUsersWithGoogleLinked()
         {
             var u = _service.GetUsersWithGoogleLinked();
             return Ok(u);
         }
+        // Kullanıcın uygulamaya kayıt olma işlemini yapan API
         [HttpPost("register")]
         public IActionResult Register([FromBody] UserDto dto)
         {
@@ -53,7 +56,7 @@ namespace ToDoApp.WebAPI.Controllers
             if (existingUser != null)
                 return BadRequest("Bu e-posta adresi kullanımda.");
 
-            byte[] passwordHash;
+            byte[] passwordHash;//şifreleme işlemleri 
             byte[] passwordSalt;
             PasswordHelper.CreatePasswordHash(dto.Password!, out passwordHash, out passwordSalt);
             var user = new ToDoUser
@@ -64,14 +67,14 @@ namespace ToDoApp.WebAPI.Controllers
                 Email = dto.Email!,
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
-                IsGoogleLinked = false
+                IsGoogleLinked = false  // google hesabı üzerinden bir bağlantı olamdığı için 
 
             };
             _service.AddUser(user);
             return Ok("Kayıt Başarılı.");
 
         }
-
+        // Kaydedilmiş kullanıcının login olma işlemini yapan API
         [HttpPost("login")]
         public IActionResult Login([FromBody] UserLoginDto dto)
         {
@@ -86,6 +89,8 @@ namespace ToDoApp.WebAPI.Controllers
             return Ok(new { token });
 
         }
+        // Google hesabı üzerinden bağlantı işlemini yapan API 
+        // Dikkat!Bu Apı fake bir google login işlemi yapmaktadır.Gerçek google login işlemi Swagger üzerinde Oauthorize ile sağlanmaktadır.(Nasıl kurulacağı README.md dosyasında yazılmaktadır.)
         [HttpPost("google-login")]
         public IActionResult GoogleLogin([FromBody] UserAuthDto dto)
         {
@@ -97,8 +102,9 @@ namespace ToDoApp.WebAPI.Controllers
                     Name = dto.Name!,
                     Surname = dto.Surname!,
                     Email = dto.Email!,
-                    IsGoogleLinked = true,
-                    GoogleAccessToken = dto.GoogleAccessToken,
+                    IsGoogleLinked = true,  // Google bağlantısını aktif hale getiriyoruz.
+                    // Token işlemleri 
+                    GoogleAccessToken = dto.GoogleAccessToken, 
                     GoogleRefreshToken = dto.GoogleRefreshToken,
                     GoogleTokenExpiry = dto.GoogleTokenExpiry
                 };
@@ -112,14 +118,26 @@ namespace ToDoApp.WebAPI.Controllers
             return Ok(new { token });
 
         }
-
+        // Kullanıcı bilgilerini güncelleme 
         [HttpPut]
-        public IActionResult UpdateUser([FromBody] ToDoUser user)
+        public IActionResult UpdateUser([FromBody] UserDto user)
         {
-            _service.UpdateUser(user);
-            return Ok("Kullanıcı bilgileri güncellendi.");
+            if (user.Id <= 0 || user == null)
+            {
+                return BadRequest("Geçersiz kullanıcı bilgisi.");
+            }
+            try
+            {
+                _service.UpdateUser(user);
+                return Ok("Kullanıcı bilgileri güncellendi.");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
         }
-
+        // Belirtilen id'ye ait kullanıcıyı silme 
         [HttpDelete("{id}")]
         public IActionResult DeleteUser(int id)
         {
