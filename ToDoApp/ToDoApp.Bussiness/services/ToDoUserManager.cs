@@ -92,9 +92,7 @@ namespace ToDoApp.Bussiness
             {
                 throw new ArgumentException("User not found", nameof(user));
             }
-            // byte[] passwordHash; //şifreleme işlemleri 
-            //byte[] passwordSalt;
-            //PasswordHelper.CreatePasswordHash(user.Password!, out passwordHash, out passwordSalt);
+
             if (!string.IsNullOrWhiteSpace(user.Password))
             {
                 PasswordHelper.CreatePasswordHash(user.Password, out var hash, out var salt);
