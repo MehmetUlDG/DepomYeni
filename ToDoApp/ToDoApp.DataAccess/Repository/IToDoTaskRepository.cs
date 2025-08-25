@@ -29,7 +29,7 @@ namespace ToDoApp.DataAccess
         /// İstenilen id değerine göre etkinliği siler.
         /// </summary>
         /// <param name="id">ToDoTask entitisindeki Id değişkenine karşılık gelir.</param>
-        Task DeleteTaskAsync(int id);
+        Task<bool> DeleteTaskAsync(int id);
         /// <summary>
         /// Kaydedilen bilgilerin veritabanına kaydedilmesini sağlar.
         /// </summary>

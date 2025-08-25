@@ -1,0 +1,195 @@
+/* Dashboard.css */
+.dashboard-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  z-index: 0;
+}
+
+.grid-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.welcome-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  color: #1b1720;
+}
+
+.welcome-content {
+  max-width: 800px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.highlight {
+  color: #8f6fda;
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(163, 137, 241, 0.3);
+  z-index: -1;
+  transform: scaleX(1.05);
+}
+
+.welcome-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: #956ac5;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.primary-btn {
+  background-color: #aa90e7;
+  color: white;
+  box-shadow: 0 4px 15px rgba(99, 53, 163, 0.3);
+}
+
+.primary-btn:hover {
+  background-color: #8f6fda;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(153, 103, 228, 0.4);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #8460d6;
+  border: 2px solid #8f6fda;
+}
+
+.secondary-btn:hover {
+  background-color: rgba(137, 103, 185, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Floating elements */
+.floating-elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.circle-element, .square-element, .triangle-element {
+  position: absolute;
+  opacity: 0.1;
+  animation: float 6s infinite ease-in-out;
+}
+
+.circle-element {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #8f6fda;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.square-element {
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c;
+  bottom: 15%;
+  right: 15%;
+  animation-delay: 1s;
+}
+
+.triangle-element {
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 150px solid #2ecc71;
+  top: 50%;
+  right: 20%;
+  animation-delay: 2s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 2rem;
+  }
+  
+  .welcome-subtitle {
+    font-size: 1rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

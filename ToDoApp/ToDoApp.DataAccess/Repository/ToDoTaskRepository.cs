@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using ToDoApp.Entities;
 namespace ToDoApp.DataAccess
 {
@@ -25,15 +26,29 @@ namespace ToDoApp.DataAccess
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteTaskAsync(int id)
+        public async Task<bool> DeleteTaskAsync(int id)
         {
-            var todoTask = _context.ToDoTasks.Find(id);
-            if (todoTask == null)
+            try
             {
-                throw new KeyNotFoundException($"Görev ID {id} bulunamadı");
+                var todoTask = _context.ToDoTasks.Find(id);
+                if (todoTask == null)
+                {
+                    throw new KeyNotFoundException($"Görev ID {id} bulunamadı");
+
+                }
+                _context.ToDoTasks.Remove(todoTask);
+                await _context.SaveChangesAsync();
+                return true;
             }
-            _context.ToDoTasks.Remove(todoTask);
-            await _context.SaveChangesAsync();
+            catch (DbUpdateConcurrencyException)
+            {
+                System.Console.WriteLine("Görev silinmiş ve yok olabilir.");
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Bir hata ile karşılaşıldı. +{ex.Message}");
+            }
         }
 
         public List<ToDoTask> GetAllTasks()

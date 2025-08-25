@@ -1,0 +1,148 @@
+/* Modern Navbar Stilleri */
+.navbar {
+  background :linear-gradient(135deg,#6366f1 0%, #8f6fda 100%);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft gölge */
+  border-radius: 0 0 12px 12px; /* Alt köşeleri yuvarlak */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 30px; /* Padding artırıldı */
+}
+
+.navbar-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth transform */
+}
+
+.navbar-logo:hover {
+  transform: translateY(-2px); /* Hafif hover efekti */
+}
+
+/* Modern Hamburger Menü */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px; /* Köşeler yuvarlak */
+  transition: all 0.3s ease;
+}
+
+.menu-icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Bounce efekti */
+  border-radius: 2px; /* Çizgilerin köşeleri yuvarlak */
+}
+
+/* Navigasyon Menüsü */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 15px; /* Flex gap ile daha modern boşluk */
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  transition: all 0.3s ease;
+  border-radius: 8px; /* Köşeler yuvarlak */
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 60%; /* Hover'da alt çizgi efekti */
+}
+
+/* Responsive Tasarım (Mobil) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    border-radius: 0; /* Mobilde tam genişlik */
+  }
+  
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 80px;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ed520a;
+    padding: 20px 0;
+    transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); /* Smooth slide */
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-menu.active {
+    background: linear-gradient(135deg, #6366f1 0%, #9672e9 100%);
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 5px 20px; /* Daha dengeli boşluk */
+  }
+
+  .nav-link {
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+  }
+  
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}

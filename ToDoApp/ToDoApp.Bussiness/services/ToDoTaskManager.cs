@@ -1,6 +1,7 @@
 using ToDoApp.Entities;
 using ToDoApp.DataAccess;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace ToDoApp.Bussiness
 {
@@ -26,15 +27,31 @@ namespace ToDoApp.Bussiness
             await _repo.SaveChangesAsync();
         }
 
-        public async Task DeleteTask(int id)
+        public async Task<bool> DeleteTask(int id)
         {
-            var task = _repo.GetTaskById(id);
-            if (task == null)
+            try
             {
-                throw new ArgumentException("Invalid task ID", nameof(id));
-            }
+                var task =  _repo.GetTaskById(id);
+                if (task == null)
+                {  
+                    return false;
+                }
 
-            await _repo.DeleteTaskAsync(id);
+                await _repo.DeleteTaskAsync(id);
+                return true;
+            }
+            catch (KeyNotFoundException)
+            {
+                return false;
+            }
+            catch (DbUpdateConcurrencyException )
+            {
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Silme işlemi başarısız: {ex.Message}");
+            }
         }
 
         public List<ToDoTask> GetAllTasks()

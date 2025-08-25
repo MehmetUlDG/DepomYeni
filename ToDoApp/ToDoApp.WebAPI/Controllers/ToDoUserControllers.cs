@@ -61,7 +61,7 @@ namespace ToDoApp.WebAPI.Controllers
             PasswordHelper.CreatePasswordHash(dto.Password!, out passwordHash, out passwordSalt);
             var user = new ToDoUser
             {
-             
+
                 Name = dto.Name!,
                 Surname = dto.Surname!,
                 Email = dto.Email!,
@@ -104,7 +104,7 @@ namespace ToDoApp.WebAPI.Controllers
                     Email = dto.Email!,
                     IsGoogleLinked = true,  // Google bağlantısını aktif hale getiriyoruz.
                     // Token işlemleri 
-                    GoogleAccessToken = dto.GoogleAccessToken, 
+                    GoogleAccessToken = dto.GoogleAccessToken,
                     GoogleRefreshToken = dto.GoogleRefreshToken,
                     GoogleTokenExpiry = dto.GoogleTokenExpiry
                 };
@@ -135,7 +135,7 @@ namespace ToDoApp.WebAPI.Controllers
             {
                 throw new Exception(ex.Message);
             }
-            
+
         }
         // Belirtilen id'ye ait kullanıcıyı silme 
         [HttpDelete("{id}")]
@@ -143,6 +143,20 @@ namespace ToDoApp.WebAPI.Controllers
         {
             _service.DeleteUser(id);
             return Ok("Kullanıcı bilgileri silindi.");
+        }
+
+        [HttpGet("validate")]
+        [Authorize]
+        public IActionResult ValidateToken()
+        {
+            var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+            return
+            Ok(new
+            {
+                message = "Token geçerli",
+                userId = userId
+            });
         }
     }
 }

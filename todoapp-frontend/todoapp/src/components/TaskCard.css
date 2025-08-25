@@ -1,0 +1,240 @@
+.task-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 4px solid #ff4757;
+  transition: all 0.3s ease;
+}
+
+.task-card.completed {
+  border-left-color: #2ed573;
+  opacity: 0.8;
+}
+
+.task-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.task-list {
+  width: 100%; /* Veya max-width kullanın */
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  max-height: 600px;
+  
+  /* Ek iyileştirmeler */
+  box-sizing: border-box; /* Padding'i genişliğe dahil eder */
+  margin: 0 auto; /* Ortalar */
+}
+.task-item {
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-left: 4px solid #6c757d;
+}
+
+.task-item:hover {
+  background: #e9ecef;
+  transform: translateX(3px);
+}
+
+.task-item.selected {
+  border-left: 4px solid #0d6efd;
+  background: #e7f1ff;
+}
+
+.task-item.completed-item {
+  border-left: 4px solid #198754;
+  opacity: 0.8;
+}
+
+.task-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-title {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.task-status-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.task-status-badge.completed {
+  background: #198754;
+  color: white;
+}
+
+.task-status-badge.pending {
+  background: #ffc107;
+  color: #212529;
+}
+
+.task-due-date {
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.task-title {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.task-status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.task-status.pending {
+  background: #fff4e6;
+  color: #ffa502;
+}
+
+.task-status.completed {
+  background: #d1fae5;
+  color: #2ed573;
+}
+
+.task-description {
+  color: #666;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.task-meta {
+  margin: 15px 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.meta-item i {
+  margin-right: 8px;
+  width: 16px;
+  text-align: center;
+  color: #ff4757;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.task-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.complete-btn {
+  background: #2ed573;
+  color: white;
+}
+
+.complete-btn:hover {
+  background: #25b562;
+}
+
+.edit-btn {
+  background: powderblue;
+  color: #333;
+}
+
+.edit-btn:hover {
+  background: #ced6e0;
+}
+.delete-btn {
+  background: #ff3a3a;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #e63535;
+}
+
+.add-task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .add-task-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .add-task-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .add-task-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .plus-icon {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .task-actions {
+    flex-direction: column;
+  }
+}

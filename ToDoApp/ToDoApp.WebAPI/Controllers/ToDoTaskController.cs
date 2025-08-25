@@ -1,6 +1,7 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ToDoApp.Bussines;
 using ToDoApp.Bussiness;
 using ToDoApp.Entities;
@@ -99,7 +100,7 @@ namespace ToDoApp.WebAPI.Controllers
             if (existingTask == null)
                 return BadRequest();
 
-          if (existingTask.UserId != user.Id)
+            if (existingTask.UserId != user.Id)
                 return Forbid("Bu işlem için yetkiniz yoktur.");
 
             await _service.UpdateTask(task, user);
@@ -110,16 +111,28 @@ namespace ToDoApp.WebAPI.Controllers
         [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteTaskAsync(int id)
         {
-          
+            try
+            {
+                var task = _service.GetTaskById(id);
+                if (task == null)
+                    return NotFound(new { message = $"Görev ID {id} bulunamadı" });
 
-            var task = _service.GetTaskById(id);
-            if (task == null)
-                return BadRequest();
+                var result = await _service.DeleteTask(id);
 
-         
-
-            await _service.DeleteTask(id);
-            return Ok("Silme işlemi başarılı.");
+                if (result)
+                {
+                    return Ok(new { message = "Silme işlemi başarılı." });
+                }
+                else
+                {
+                    return StatusCode(500, new { message = "Silme işlemi başarısız." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Sunucu hatası: {ex.Message}" });
+            }
         }
+
     }
 }
