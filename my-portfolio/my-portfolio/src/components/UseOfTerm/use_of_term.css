@@ -1,0 +1,226 @@
+
+.useofterm-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+/* Başlık Bölümü */
+.useofterm-header {
+    color: rgb(0, 0, 0);
+    padding: 40px 30px;
+    text-align: center;
+     font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light',
+               'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+}
+
+.useofterm-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.useofterm-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* İçerik Bölümü */
+.useofterm-content {
+    padding: 30px;
+     font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light',
+               'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+}
+
+/* Kabul Uyarısı */
+.acceptance-notice {
+    background-color: #eff6ff;
+    border-left: 4px solid #4082cd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+     font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light',
+               'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+}
+
+.acceptance-notice p {
+    margin: 0;
+    color: #1a4a9456;
+    font-weight: 500;
+}
+
+/* İçerik Bölümleri */
+.content-section {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e2e8f0;
+     font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light',
+               'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+}
+
+.content-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.content-section h2 {
+    color: #1e293b;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    display: inline-block;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+    color: #475569;
+}
+
+/* Daha Fazla Bilgi Linki */
+.learn-more {
+    display: inline-flex;
+    align-items: center;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #eff6ff;
+    border-radius: 6px;
+     font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light',
+               'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+}
+
+.learn-more:hover {
+    color: #1e40af;
+    background-color: #dbeafe;
+    transform: translateY(-2px);
+}
+
+.learn-more i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.learn-more:hover i {
+    transform: translateX(4px);
+}
+
+/* Son Güncelleme */
+.last-update {
+    text-align: right;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-style: italic;
+}
+
+/* İçerik Gezintisi (Sabit) */
+.content-navigation {
+    position: sticky;
+    top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.content-navigation h3 {
+    margin-bottom: 15px;
+    color: #1e293b;
+    font-size: 1.2rem;
+}
+
+.content-navigation ul {
+    list-style: none;
+}
+
+.content-navigation li {
+    margin-bottom: 10px;
+}
+
+.content-navigation a {
+    color: #475569;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 5px 0;
+    border-left: 3px solid transparent;
+    padding-left: 10px;
+}
+
+.content-navigation a:hover,
+.content-navigation a.active {
+    color: #2563eb;
+    border-left-color: #2563eb;
+}
+
+/* Düğmeler */
+.accept-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #1fab757d 0%, #1b956e 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    text-align: center;
+     font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light',
+               'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+}
+
+.accept-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(16, 185, 129, 0.3);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .useofterm-header {
+        padding: 30px 20px;
+    }
+    
+    .useofterm-header h1 {
+        font-size: 2rem;
+    }
+    
+    .useofterm-content {
+        padding: 20px;
+    }
+    
+    .content-navigation {
+        position: static;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .useofterm-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.3rem;
+    }
+}

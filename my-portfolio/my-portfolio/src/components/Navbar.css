@@ -1,0 +1,333 @@
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: all 0.25s ease;
+  z-index: 1000;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.navbar.scrolled {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  padding: 8px 0;
+  height: 46px;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  margin-right: auto;
+}
+
+.navbar-logo a {
+  font-size: 17px;
+  font-weight: 600;
+  color: #2d3748;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.navbar-logo a:hover {
+  color: #4299e1;
+}
+
+.navbar-logo a i {
+  margin-right: 6px;
+  font-size: 15px;
+  color: #4299e1;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.navbar-left a, .navbar-right a {
+  text-decoration: none;
+  color: #4a5568;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+  padding: 4px 0;
+}
+
+.navbar-left a:hover, .navbar-right a:hover {
+  color: #2d3748;
+}
+
+.navbar-left a::after, .navbar-right a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.2px;
+  background-color: #4299e1;
+  transition: width 0.25s ease;
+}
+
+.navbar-left a:hover::after, .navbar-right a:hover::after {
+  width: 100%;
+}
+
+.navbar-right a {
+  background-color: #4299e1;
+  color: white !important;
+  padding: 6px 14px;
+  border-radius: 16px;
+  transition: all 0.25s ease;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.navbar-right a:hover {
+  background-color: #3182ce;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(66, 153, 225, 0.25);
+}
+
+.navbar-right a::after {
+  display: none;
+}
+
+/* Dil Seçici Stilleri */
+.language-selector {
+  position: relative;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #4a5568;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.language-button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: #2d3748;
+}
+
+.language-button i:first-child {
+  font-size: 12px;
+}
+
+.language-button i:last-child {
+  font-size: 10px;
+  transition: transform 0.2s ease;
+}
+
+.language-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  margin-top: 8px;
+  min-width: 120px;
+  z-index: 1001;
+  animation: fadeIn 0.2s ease;
+}
+
+.language-menu button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #4a5568;
+  transition: all 0.2s ease;
+}
+
+.language-menu button:hover {
+  background-color: #f7fafc;
+  color: #2d3748;
+}
+
+.language-menu button.active {
+  background-color: #ebf8ff;
+  color: #3182ce;
+}
+
+.language-menu button span:last-child {
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 4px;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggle span {
+  width: 18px;
+  height: 1.5px;
+  background-color: #4a5568;
+  margin: 1.5px 0;
+  transition: all 0.3s ease;
+  border-radius: 1px;
+}
+
+/* Mobil cihazlar için responsive tasarım */
+@media (max-width: 968px) {
+  .navbar {
+    padding: 8px 0;
+  }
+  
+  .navbar.scrolled {
+    padding: 6px 0;
+  }
+  
+  .navbar-menu {
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 25px 20px;
+    transition: all 0.35s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  }
+  
+  .navbar-menu.active {
+    left: 0;
+  }
+  
+  .navbar-left, .navbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0;
+  }
+  
+  .navbar-left a, .navbar-right a {
+    padding: 12px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    font-size: 15px;
+  }
+  
+  .navbar-right a {
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+  }
+  
+  /* Mobilde dil seçici */
+  .language-selector {
+    width: 100%;
+    margin: 12px 0;
+  }
+  
+  .language-button {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  
+  .language-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    margin-top: 8px;
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+  
+  .navbar-toggle {
+    display: flex;
+  }
+  
+  .navbar-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-3px, 4px);
+  }
+  
+  .navbar-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-3px, -4px);
+  }
+}
+
+/* Çok küçük ekranlar için */
+@media (max-width: 380px) {
+  .navbar-container {
+    padding: 0 15px;
+  }
+  
+  .navbar-logo a {
+    font-size: 15px;
+  }
+  
+  .navbar-logo a i {
+    font-size: 14px;
+  }
+  
+  .language-button {
+    font-size: 12px;
+  }
+}

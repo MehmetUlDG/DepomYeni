@@ -1,0 +1,135 @@
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.privacy-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.privacy-header {
+    text-align: center;
+    margin-bottom: 50px;
+     font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light',
+               'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+.privacy-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.privacy-header p {
+    font-size: 1.2rem;
+    color: #475569;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.privacy-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.privacy-card {
+  background: linear-gradient(145deg, #f1f5f9, #ffffff);
+  border-radius: 20px;
+  padding: 40px 35px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light',
+               'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+.privacy-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 100;
+  color: #0f172a;
+  font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light',
+               'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+}
+
+.card-content {
+  margin-bottom: 20px;
+  color: #334155;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  font-weight: 100;
+  font-family: 'Helvetica Neue', 'HelveticaNeue-Light', 'Helvetica Neue Light',
+               'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+}
+
+
+.learn-more {
+    display: inline-flex;
+    align-items: center;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+    color: #1e40af;
+}
+
+.learn-more i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.learn-more:hover i {
+    transform: translateX(3px);
+}
+
+
+
+@media (max-width: 768px) {
+    .privacy-container {
+        padding: 0 15px;
+    }
+    
+    .privacy-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .privacy-header p {
+        font-size: 1.1rem;
+    }
+    
+    .privacy-card {
+        padding: 25px;
+    }
+    
+    .card-title {
+        font-size: 1.4rem;
+    }
+    
+    .card-content {
+        font-size: 1rem;
+    }
+  
+}
