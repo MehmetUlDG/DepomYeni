@@ -25,7 +25,7 @@ Projenin geliştirilmesinde aşağıdaki teknolojiler ve kütüphaneler kullanı
 
 * **[React](https://reactjs.org/):** Kullanıcı arayüzü kütüphanesi.
 * **[React Hooks](https://reactjs.org/docs/hooks-intro.html):** `useState` (arama durumu, kitap listesi için), `useEffect` (veri çekme için) vb.
-* **CSS3:** (veya SASS, Styled Components, Material-UI, Tailwind CSS - hangisini kullandıysanız buraya yazın) Projenin stillendirilmesi için.
+* **CSS3:** Projenin stillendirilmesi için.
 
 ---
 
