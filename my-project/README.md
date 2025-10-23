@@ -2,9 +2,8 @@
 
 Bu proje, React kullanılarak geliştirilmiş basit bir okul kütüphanesi web uygulamasıdır. Kullanıcıların (öğrencilerin veya öğretmenlerin) kütüphanedeki mevcut kitapları aramasına, filtrelemesine ve listelemesine olanak tanır.
 
-Bu proje, [React eğitimi] veya [kişisel portfolyo] amacıyla oluşturulmuştur.
+Bu proje, React eğitimi  amacıyla oluşturulmuştur.
 
-##  ekran görüntüsü
 ![web penceresi](<Ekran görüntüsü 2025-10-23 234336-1.png>)
 
 
@@ -27,9 +26,6 @@ Projenin geliştirilmesinde aşağıdaki teknolojiler ve kütüphaneler kullanı
 * **[React](https://reactjs.org/):** Kullanıcı arayüzü kütüphanesi.
 * **[React Hooks](https://reactjs.org/docs/hooks-intro.html):** `useState` (arama durumu, kitap listesi için), `useEffect` (veri çekme için) vb.
 * **CSS3:** (veya SASS, Styled Components, Material-UI, Tailwind CSS - hangisini kullandıysanız buraya yazın) Projenin stillendirilmesi için.
-* **(Opsiyonel) [React Router](https://reactrouter.com/):** (Eğer farklı sayfalar varsa, örn: Kitap Detay sayfası) Sayfalar arası gezinme için.
-* **(Opsiyonel) [Axios](https://axios-http.com/):** (Eğer veriyi bir API'den çekiyorsanız) HTTP istekleri için.
-* **(Opsiyonel) db.json:** (Eğer `json-server` kullandıysanız) Basit bir sahte API oluşturmak için.
 
 ---
 
@@ -74,19 +70,19 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 ## 📂 Proje Yapısı (Örnek)
 
 Projenin temel dosya yapısı şu şekildedir:
-
-->node_modules
-->public
-->src
-  |->components
-  |-> App.css
-  |-> App.js
-  |-> App.test.js
-  |-> index.js
-  |-> index.css
-  |-> reportWebVitals.js
-  |-> setupTest.js
-  |-> .gitignore
-  |-> package-lock.json
-  |-> package.json
-  |-> README.md
+my-project/
+├── node_modules/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   └── setupTest.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
