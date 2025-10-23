@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# 📚 React ile Okul Kütüphanesi Projesi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, React kullanılarak geliştirilmiş basit bir okul kütüphanesi web uygulamasıdır. Kullanıcıların (öğrencilerin veya öğretmenlerin) kütüphanedeki mevcut kitapları aramasına, filtrelemesine ve listelemesine olanak tanır.
 
-## Available Scripts
+Bu proje, [React eğitimi] veya [kişisel portfolyo] amacıyla oluşturulmuştur.
 
-In the project directory, you can run:
+##  ekran görüntüsü
+![web penceresinden görüntü](<Ekran görüntüsü 2025-10-23 234336.png>)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Özellikler
 
-### `npm test`
+Bu projenin temel özellikleri şunlardır:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Kitap Listeleme:** Tüm kitapların bir liste veya kart görünümünde gösterilmesi.
+* **Dinamik Arama:** Kitap adı, yazar veya [kategori] bazında anlık arama yapabilme.
+* **Filtreleme:** (Varsa) Kitapları kategorilerine (örn: Roman, Bilim, Tarih) göre filtreleme.
+* **Kitap Detayları:** (Varsa) Her kitap için basit bir detay görünümü (kapak fotoğrafı, özet vb.).
+* **Duyarlı Tasarım (Responsive):** Mobil cihazlarda ve tabletlerde düzgün çalışan arayüz.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Kullanılan Teknolojiler
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Projenin geliştirilmesinde aşağıdaki teknolojiler ve kütüphaneler kullanılmıştır:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **[React](https://reactjs.org/):** Kullanıcı arayüzü kütüphanesi.
+* **[React Hooks](https://reactjs.org/docs/hooks-intro.html):** `useState` (arama durumu, kitap listesi için), `useEffect` (veri çekme için) vb.
+* **CSS3:** (veya SASS, Styled Components, Material-UI, Tailwind CSS - hangisini kullandıysanız buraya yazın) Projenin stillendirilmesi için.
+* **(Opsiyonel) [React Router](https://reactrouter.com/):** (Eğer farklı sayfalar varsa, örn: Kitap Detay sayfası) Sayfalar arası gezinme için.
+* **(Opsiyonel) [Axios](https://axios-http.com/):** (Eğer veriyi bir API'den çekiyorsanız) HTTP istekleri için.
+* **(Opsiyonel) db.json:** (Eğer `json-server` kullandıysanız) Basit bir sahte API oluşturmak için.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Kurulum ve Başlatma
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1.  **Projeyi klonlayın:**
+    ```bash
+    git clone https://github.com/MehmetUlDG/DepomYeni/tree/main/my-project.git
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2.  **Proje dizinine gidin:**
+    ```bash
+    cd my-project
+    ```
 
-## Learn More
+3.  **Gerekli paketleri yükleyin:**
+    (Eğer npm kullanıyorsanız)
+    ```bash
+    npm install
+    ```
+    (Eğer yarn kullanıyorsanız)
+    ```bash
+    yarn install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4.  **Projeyi başlatın:**
+    (Eğer npm kullanıyorsanız)
+    ```bash
+    npm start
+    ```
+    (Eğer yarn kullanıyorsanız)
+    ```bash
+    yarn dev
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5.  Tarayıcınızda `http://localhost:3000` (veya Vite için `http://localhost:5173`) adresini açın.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📂 Proje Yapısı (Örnek)
 
-### Analyzing the Bundle Size
+Projenin temel dosya yapısı şu şekildedir:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+->node_modules
+->public
+->src
+  |->components
+  |-> App.css
+  |-> App.js
+  |-> App.test.js
+  |-> index.js
+  |-> index.css
+  |-> reportWebVitals.js
+  |-> setupTest.js
+  |-> .gitignore
+  |-> package-lock.json
+  |-> package.json
+  |-> README.md
