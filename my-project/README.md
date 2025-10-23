@@ -5,7 +5,7 @@ Bu proje, React kullanılarak geliştirilmiş basit bir okul kütüphanesi web u
 Bu proje, [React eğitimi] veya [kişisel portfolyo] amacıyla oluşturulmuştur.
 
 ##  ekran görüntüsü
-![web penceresinden görüntü](<Ekran görüntüsü 2025-10-23 234336.png>)
+![web penceresi](<Ekran görüntüsü 2025-10-23 234336-1.png>)
 
 
 ---
@@ -16,9 +16,7 @@ Bu projenin temel özellikleri şunlardır:
 
 * **Kitap Listeleme:** Tüm kitapların bir liste veya kart görünümünde gösterilmesi.
 * **Dinamik Arama:** Kitap adı, yazar veya [kategori] bazında anlık arama yapabilme.
-* **Filtreleme:** (Varsa) Kitapları kategorilerine (örn: Roman, Bilim, Tarih) göre filtreleme.
-* **Kitap Detayları:** (Varsa) Her kitap için basit bir detay görünümü (kapak fotoğrafı, özet vb.).
-* **Duyarlı Tasarım (Responsive):** Mobil cihazlarda ve tabletlerde düzgün çalışan arayüz.
+* **Filtreleme:**  Kitapları kategorilerine (örn: Roman, Bilim, Tarih) göre filtreleme.
 
 ---
 
